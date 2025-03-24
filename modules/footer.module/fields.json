@@ -1,0 +1,199 @@
+[
+    {
+     "default": {
+      "size_type": "auto",
+      "src": "https://40167303.fs1.hubspotusercontent-na1.net/hubfs/40167303/logo-ybl.svg",
+      "alt": "logo-ybl",
+      "loading": "lazy",
+      "width": 90,
+      "height": 24,
+      "max_width": 90,
+      "max_height": 24
+     },
+     "display_width": null,
+     "id": "5cd0af07-25d6-57ab-daaa-141cb16f38eb",
+     "label": "Logo",
+     "locked": false,
+     "name": "logo",
+     "required": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image"
+    },
+    {
+     "type": "text",
+     "id": "92024391-a710-7602-300b-9f58e5dadfe6",
+     "validation_regex": "",
+     "label": "Email",
+     "name": "email",
+     "default": "contact@ybl.ai"
+    },
+    {
+     "type": "url",
+     "id": "580b9d8e-b4a5-bea1-39cf-0c5a81b0bbed",
+     "default": {
+      "content_id": null,
+      "href": "",
+      "type": "EXTERNAL"
+     },
+     "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS",
+      "BLOG",
+      "CALL_TO_ACTION",
+      "PHONE_NUMBER",
+      "WHATSAPP_NUMBER",
+      "PAYMENT"
+     ],
+     "label": "Url Linkin",
+     "name": "url_linkin"
+    },
+    {
+     "type": "url",
+     "id": "d0e3f55f-c40c-e873-f812-12028fee1f08",
+     "default": {
+      "content_id": null,
+      "href": "",
+      "type": "EXTERNAL"
+     },
+     "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS",
+      "BLOG",
+      "CALL_TO_ACTION",
+      "PHONE_NUMBER",
+      "WHATSAPP_NUMBER",
+      "PAYMENT"
+     ],
+     "label": "Url Youtube",
+     "name": "url_youtube"
+    },
+    {
+     "type": "group",
+     "id": "58a5dc30-65b4-2b0a-5df3-87dbfd6b7e63",
+     "label": "Address",
+     "children": [
+      {
+       "type": "text",
+       "id": "6784c552-44b2-d195-6594-ed3faca36ca2",
+       "validation_regex": "",
+       "label": "Nation",
+       "name": "nation",
+       "default": "Australia"
+      },
+      {
+       "type": "text",
+       "id": "7edb60cd-a3ab-4e5b-d940-c0fcd651ef99",
+       "validation_regex": "",
+       "label": "Address Text",
+       "name": "address_text",
+       "default": "Level 29, Chifley Tower, 2 Chifley Square, Sydney 2000"
+      },
+      {
+       "type": "url",
+       "id": "bf697cca-013e-2f89-6e51-bb82ffbaf0dd",
+       "default": {
+        "content_id": null,
+        "href": "",
+        "type": "EXTERNAL"
+       },
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG",
+        "CALL_TO_ACTION",
+        "PHONE_NUMBER",
+        "WHATSAPP_NUMBER",
+        "PAYMENT"
+       ],
+       "label": "Address Link",
+       "name": "address_link"
+      }
+     ],
+     "name": "address",
+     "default": [
+      {
+       "nation": "Australia",
+       "address_text": "Level 29, Chifley Tower, 2 Chifley Square, Sydney 2000",
+       "address_link": {
+        "content_id": null,
+        "href": "",
+        "type": "EXTERNAL"
+       }
+      }
+     ],
+     "occurrence": {
+      "min": 1,
+      "max": 2,
+      "default": 1
+     }
+    },
+    {
+     "type": "text",
+     "id": "bca7c1c1-1ab6-12d8-7e9c-8bd0b68ee98d",
+     "validation_regex": "",
+     "label": "Description",
+     "name": "description",
+     "default": "This material has been prepared by YB Life Pty Ltd (ACN 667 901 537) (YBL, ‘us’ or ‘we’). The material on this website is for general information only and is not an offer for the purchase or sale of any financial product or service.  The material is not intended to provide you with financial or tax advice and does not take into account your objectives, financial situation or needs.  Although we believe that the material is correct, no warranty of accuracy, reliability or completeness is given, except for liability under statute which cannot be excluded. Please note that past performance may not be indicative of future performance.  To the maximum extent possible, YBL, its related bodies corporate, and their officers do not accept any liability for any statement on this website."
+    },
+    {
+     "type": "group",
+     "id": "352209fd-570b-bf71-ecca-f89258f9f502",
+     "label": "Menu",
+     "children": [
+      {
+       "type": "text",
+       "id": "669beb21-f26c-864b-bca8-5125780054a7",
+       "validation_regex": "",
+       "label": "Title",
+       "name": "title",
+       "default": "Terms of use"
+      },
+      {
+       "type": "url",
+       "id": "b9cc7cda-444a-5ecb-b888-b37c3d20fcf2",
+       "default": {
+        "content_id": null,
+        "href": "",
+        "type": "EXTERNAL"
+       },
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG",
+        "CALL_TO_ACTION",
+        "PHONE_NUMBER",
+        "WHATSAPP_NUMBER",
+        "PAYMENT"
+       ],
+       "label": "Link",
+       "name": "link"
+      }
+     ],
+     "name": "menu",
+     "default": [
+      {
+       "title": "Terms of use",
+       "link": {
+        "content_id": null,
+        "href": "",
+        "type": "EXTERNAL"
+       }
+      }
+     ],
+     "occurrence": {
+      "min": 1,
+      "max": 2,
+      "default": 1
+     }
+    }
+   ]

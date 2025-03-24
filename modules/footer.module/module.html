@@ -1,0 +1,73 @@
+<!-- module html  -->
+  <div class="container">
+    <div class="footer-logo-wrap">
+      <div class="footer-logo">
+        <div class="footer-logo-inner">
+          <img src="{{module.logo.src}}" alt="" class="img-h">
+        </div>
+      </div>
+      <div class="footer-logo-line"></div>
+    </div>
+    <div class="footer-info grid">
+      <div class="footer-info-left">
+        <div class="footer-info-email">
+          <p class="txt txt-16 footer-info-email-label">Email</p>
+          <a href="mailto:{{module.email}}" class="hover-un txt-link footer-info-email-txt">
+            <div class="footer-info-email-txt-inner">
+              <span class="heading h5">{{module.email}}</span>
+              <div class="line line-hover header-signin-line"><div class="line-inner line-inner-hover"></div></div>
+            </div>
+            <div class="footer-info-email-ic">
+              <svg width="100%" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.34285 17.7476C5.95232 17.3571 5.95232 16.7239 6.34285 16.3334L16.2423 6.43393C16.6329 6.0434 17.266 6.0434 17.6566 6.43393C18.0471 6.82445 18.0471 7.45761 17.6566 7.84814L7.75706 17.7476C7.36654 18.1382 6.73337 18.1382 6.34285 17.7476Z" fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9502 6.14102C16.3979 6.14102 15.9502 6.58874 15.9502 7.14102L15.9502 15.6263C15.9502 16.1786 16.3979 16.6263 16.9502 16.6263C17.5025 16.6263 17.9502 16.1786 17.9502 15.6263L17.9502 7.14102C17.9502 6.58874 17.5025 6.14102 16.9502 6.14102Z" fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.46439 7.14098C7.46439 7.69327 7.91211 8.14099 8.46439 8.14098H16.9497C17.502 8.14099 17.9497 7.69327 17.9497 7.14098C17.9497 6.5887 17.502 6.14098 16.9497 6.14099H8.46439C7.91211 6.14098 7.46439 6.5887 7.46439 7.14098Z" fill="currentColor"/>
+                </svg>              
+            </div>
+          </a>
+        </div>
+        <div class="footer-info-social">
+          <p class="txt txt-16 footer-info-social-label">Socials</p>
+          <div class="footer-info-social-inner">
+            <a href="{{module.url_linkin.href}}" target="_blank" class="footer-info-social-item">
+              <div class="footer-info-social-inner-ic">
+                <svg width="100%" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.85734 7.8263H10.9523V9.36797C11.3982 8.4813 12.5415 7.68463 14.259 7.68463C17.5515 7.68463 18.3332 9.44964 18.3332 12.688V18.6855H14.9998V13.4255C14.9998 11.5813 14.554 10.5413 13.419 10.5413C11.8448 10.5413 11.1907 11.6621 11.1907 13.4246V18.6855H7.85734V7.8263ZM2.1415 18.5438H5.47484V7.68463H2.1415V18.5438ZM5.95234 4.1438C5.95246 4.4232 5.89705 4.69983 5.78933 4.95762C5.6816 5.21542 5.52372 5.44923 5.32484 5.64547C4.92184 6.04599 4.37635 6.27018 3.80817 6.2688C3.241 6.26842 2.69676 6.0448 2.29317 5.6463C2.09501 5.44939 1.93766 5.21532 1.83012 4.95749C1.72259 4.69967 1.66699 4.42315 1.6665 4.1438C1.6665 3.57963 1.8915 3.03963 2.294 2.6413C2.69724 2.24226 3.2417 2.01855 3.809 2.0188C4.37734 2.0188 4.92234 2.24297 5.32484 2.6413C5.72651 3.03963 5.95234 3.57963 5.95234 4.1438Z" fill="currentColor"/>
+                </svg>      
+              </div>
+            </a>
+            <a href="{{module.url_youtube.href}}" target="_blank" class="footer-info-social-item">
+              <div class="footer-info-social-inner-ic">
+                <svg width="100%" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.8333 6.35205C19.8333 6.35205 19.6667 4.93538 19 4.35205C18.25 3.51872 17.4167 3.51872 17 3.51872C14.1667 3.35205 10 3.35205 10 3.35205C10 3.35205 5.83333 3.35205 3 3.51872C2.58333 3.60205 1.75 3.60205 1 4.35205C0.416667 4.93538 0.166667 6.35205 0.166667 6.35205C0.166667 6.35205 0 7.93538 0 9.60205V11.102C0 12.6854 0.166667 14.352 0.166667 14.352C0.166667 14.352 0.333333 15.7687 1 16.3521C1.75 17.1854 2.75 17.1021 3.16667 17.1854C4.75 17.3521 10 17.352 10 17.352C10 17.352 14.1667 17.3521 17 17.1021C17.4167 17.0187 18.25 17.0187 19 16.2687C19.5833 15.6854 19.8333 14.2687 19.8333 14.2687C19.8333 14.2687 20 12.6854 20 11.0187V9.51872C20 7.93538 19.8333 6.35205 19.8333 6.35205ZM7.91667 12.9354V7.35205L13.3333 10.1854L7.91667 12.9354Z" fill="currentColor"/>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info-right">
+        {% for item in module.address %}
+          <div class="footer-info-address">
+            <p class="txt txt-18 txt-semi footer-info-address-label">{{item.nation}}</p>
+            <a href="{{item.address_link.href}}" class="txt-link footer-info-address-txt" target="_blank"><span class="txt txt-16 ">{{item.address_text}}</span></a>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="footer-info-line"></div>
+    </div>
+    <div class="footer-desc">
+      <p class="txt txt-14 footer-desc-txt">{{module.description}}</p>
+    </div>
+    <div class="footer-bot">
+      <div class="footer-copyright"><p class="txt txt-14 footer-copyright">Copyright © <span class="current-year">2025</span> FAYBL</p></div>
+      <div class="footer-bot-menu">
+        {% for item in module.menu %}
+          <a href="{{item.link.href}}" class="hover-un txt-link footer-bot-menu-item" target="_blank">
+            <span class="txt-14 txt">{{item.title}}</span>
+            <div class="line line-hover header-menu-item-line"><div class="line-inner line-inner-hover header-menu-item-line-inner"></div></div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>

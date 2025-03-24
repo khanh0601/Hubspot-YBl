@@ -1,0 +1,48 @@
+<!-- module html  -->
+  <div class="container" data-init-df>
+    <div class="header-inner">
+      <div class="header-logo-wrap">
+        <div class="header-logo-inner">
+          <img src="{{module.logo.src}}" alt="" class="img-h">
+        </div>
+        <div class="header-menu">
+          {% for item in module.menu_item %}
+          <a href="{{item.menu_url.href}}" class="header-menu-item hover-un txt-link">
+            <span class="txt-14 txt txt-bold">{{item.menu_text}}</span>
+            <div class="line line-hover header-menu-item-line"><div class="line-inner line-inner-hover header-menu-item-line-inner"></div></div>
+          </a>
+          {% endfor %}
+          <div class="header-act-mob">
+            <a href="{{module.signin.signin_url.url.href}}" class="header-signin txt-link hover-un" target="_blank">
+              <span class="txt txt-14 txt-bold">{{module.signin.signin_text}}</span>
+              <div class="line line-hover header-signin-line"><div class="line-inner line-inner-hover"></div></div>
+            </a>
+            <a href="{{module.register.register_url.url.href}}" class="header-signup txt-link btn btn-orange" target="_blank">
+              <span class="txt txt-14 txt-bold">{{module.register.register_text}}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-act">
+        <a href="{{module.signin.signin_url.url.href}}" class="header-signin txt-link hover-un" target="_blank">
+          <span class="txt txt-14 txt-bold">{{module.signin.signin_text}}</span>
+          <div class="line line-hover header-signin-line"><div class="line-inner line-inner-hover"></div></div>
+        </a>
+        <a href="{{module.register.register_url.url.href}}" class="header-signup txt-link btn btn-orange" target="_blank">
+          <span class="txt txt-14 txt-bold">{{module.register.register_text}}</span>
+        </a>
+      </div>
+      <div class="header-toggle">
+         <div class="header-toggle-ic open">
+            <svg width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 11.3333C2 11.7015 2.29848 12 2.66667 12H13.3333C13.7015 12 14 11.7015 14 11.3333C14 10.9651 13.7015 10.6667 13.3333 10.6667H2.66667C2.29848 10.6667 2 10.9651 2 11.3333ZM2 8C2 8.36819 2.29848 8.66667 2.66667 8.66667H13.3333C13.7015 8.66667 14 8.36819 14 8C14 7.63181 13.7015 7.33333 13.3333 7.33333H2.66667C2.29848 7.33333 2 7.63181 2 8ZM2.66667 4C2.29848 4 2 4.29848 2 4.66667C2 5.03486 2.29848 5.33333 2.66667 5.33333H13.3333C13.7015 5.33333 14 5.03486 14 4.66667C14 4.29848 13.7015 4 13.3333 4H2.66667Z" fill="#121212"/>
+            </svg>            
+         </div>
+         <div class="header-toggle-ic close">
+            <svg width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.7574 11.2997C3.49705 11.5601 3.49705 11.9822 3.7574 12.2426C4.01775 12.5029 4.43986 12.5029 4.7002 12.2426L8.00004 8.94272L11.2999 12.2426C11.5602 12.5029 11.9823 12.5029 12.2427 12.2426C12.503 11.9822 12.503 11.5601 12.2427 11.2997L8.94285 7.99991L12.2427 4.70008C12.503 4.43973 12.503 4.01762 12.2427 3.75727C11.9823 3.49692 11.5602 3.49692 11.2999 3.75727L8.00004 7.05711L4.7002 3.75727C4.43986 3.49692 4.01775 3.49692 3.7574 3.75727C3.49705 4.01762 3.49705 4.43973 3.7574 4.70008L7.05723 7.99991L3.7574 11.2997Z" fill="white"/>
+            </svg>                      
+         </div>
+      </div>
+    </div>
+  </div>

@@ -6,36 +6,13 @@
 -->
 {% extends "./layouts/base.html" %}
 
-{% block header %}
-  {% global_partial path="./partials/header-no-navigation.html" %}
-{% endblock header %}
 
 {% block body %}
-{% dnd_area "dnd_area"
-  label="Main section",
-  class="body-container body-container--landing-page"
-%}
-
-  {# Hero banner #}
-
-  {% include_dnd_partial
-    path="../sections/hero-banner.html"
-    context={
-      "content": "<h1>Download your free eBook</h1><p>Use this space to tell everyone what your eBook is all about.</p>"
-    }
-  %}
-
-  {# Three column image with text #}
-
-  {% include_dnd_partial
-    path="../sections/multi-column-content.html",
-    context={
-      "background_color": "#FFFFFF"
-    }
-  %}
-
-{% end_dnd_area %}
+  <div class="main-inner">
+  {% module "landing-hero" path="../modules/landing-hero.module", label="landing-hero" %}
+  {% module "landing-intro" path="../modules/landing-intro.module", label="landing-intro" %}
+  {% module "landing-solution" path="../modules/landing-solution.module", label="landing-solution" %}
+  {% module "landing-why" path="../modules/landing-why.module", label="landing-why" %}
+  {% module "landing-cta" path="../modules/landing-cta.module", label="landing-cta" %}
+  </div>
 {% endblock body %}
-
-{% block footer %}
-{% endblock footer %}

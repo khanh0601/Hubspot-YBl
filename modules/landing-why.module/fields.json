@@ -1,0 +1,85 @@
+[
+    {
+     "allow_new_line": false,
+     "default": "Boost Productivity and Deliver Exceptional Service",
+     "display_width": null,
+     "id": "2708e2fa-34b6-3a02-9a4a-695636d95fa2",
+     "label": "Title",
+     "locked": false,
+     "name": "title",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "type": "image",
+     "id": "b919dea4-12fe-fe83-eb5b-5e87d252bb15",
+     "default": {
+      "size_type": "auto",
+      "src": "https://40167303.fs1.hubspotusercontent-na1.net/hubfs/40167303/Women%20Sitting%20Photo.jpg",
+      "alt": "Women Sitting Photo",
+      "loading": "lazy",
+      "width": 1953,
+      "height": 989,
+      "max_width": 1953,
+      "max_height": 989
+     },
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "label": "Image",
+     "name": "image"
+    },
+    {
+     "children": [
+      {
+       "allow_new_line": false,
+       "default": "Enhanced Productivity",
+       "display_width": null,
+       "id": "3f922bf4-a5ee-6f85-ff8d-7b46235d9dc7",
+       "label": "Title",
+       "locked": false,
+       "name": "title",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "allow_new_line": false,
+       "default": "With copilot taking on administrative tasks, you have more time for client interactions and strategy.",
+       "display_width": null,
+       "id": "e63b134a-745e-f25d-9326-e4ba4a47bafa",
+       "label": "Description",
+       "locked": false,
+       "name": "description",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      }
+     ],
+     "default": [
+      {
+       "title": "Enhanced Productivity",
+       "description": "With copilot taking on administrative tasks, you have more time for client interactions and strategy."
+      }
+     ],
+     "display_width": null,
+     "expanded": false,
+     "group_occurrence_meta": null,
+     "id": "70318cac-6008-a245-a3ef-2072a0b84e21",
+     "label": "Item Reason",
+     "locked": false,
+     "name": "item_reason",
+     "occurrence": {
+      "default": 1,
+      "min": 1,
+      "max": 3
+     },
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
+    }
+   ]

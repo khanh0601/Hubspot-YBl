@@ -1,0 +1,73 @@
+[
+    {
+     "type": "text",
+     "id": "2708e2fa-34b6-3a02-9a4a-695636d95fa2",
+     "validation_regex": "",
+     "label": "Title",
+     "name": "title",
+     "default": "Smart Features to Elevate Your Day-to-Day"
+    },
+    {
+     "children": [
+      {
+       "default": {
+        "src": "https://40167303.fs1.hubspotusercontent-na1.net/hubfs/40167303/solution1.jpg",
+        "alt": "solution1",
+        "width": 1554,
+        "height": 1106,
+        "size_type": "auto_custom_max",
+        "max_width": 1554,
+        "max_height": 1106
+       },
+       "display_width": null,
+       "id": "df5ae754-03a7-9306-e1f0-5035cfc33338",
+       "label": "Image",
+       "locked": false,
+       "name": "image",
+       "required": false,
+       "resizable": true,
+       "responsive": true,
+       "show_loading": false,
+       "type": "image"
+      },
+      {
+       "allow_new_line": false,
+       "default": "Multi-Task Capability",
+       "display_width": null,
+       "id": "3f922bf4-a5ee-6f85-ff8d-7b46235d9dc7",
+       "label": "Title",
+       "locked": false,
+       "name": "title",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "allow_new_line": false,
+       "default": "Juggle tasks seamlessly - copilot handles multiple processes, keeping you efficient and organized.",
+       "display_width": null,
+       "id": "e63b134a-745e-f25d-9326-e4ba4a47bafa",
+       "label": "Description",
+       "locked": false,
+       "name": "description",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      }
+     ],
+     "default": [],
+     "display_width": null,
+     "expanded": false,
+     "group_occurrence_meta": null,
+     "id": "70318cac-6008-a245-a3ef-2072a0b84e21",
+     "label": "Item Solution",
+     "locked": false,
+     "name": "item_solution",
+     "occurrence": {},
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
+    }
+   ]

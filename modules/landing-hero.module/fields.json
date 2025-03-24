@@ -1,0 +1,36 @@
+[
+    {
+     "type": "text",
+     "id": "3f922bf4-a5ee-6f85-ff8d-7b46235d9dc7",
+     "validation_regex": "",
+     "label": "Title",
+     "name": "title",
+     "default": "Meet Your New AI-Powered Assistant"
+    },
+    {
+     "type": "text",
+     "id": "e63b134a-745e-f25d-9326-e4ba4a47bafa",
+     "validation_regex": "",
+     "label": "Description",
+     "name": "description",
+     "default": "Streamline Your Workflow, Amplify Your Expertise with YBL copilot."
+    },
+    {
+     "type": "image",
+     "id": "df5ae754-03a7-9306-e1f0-5035cfc33338",
+     "default": {
+      "src": "https://40167303.fs1.hubspotusercontent-na1.net/hubfs/40167303/ld-hero%20(1).png",
+      "alt": "ld-hero (1)",
+      "width": 2608,
+      "height": 1303,
+      "max_width": 2000,
+      "max_height": 999.2331288343559,
+      "size_type": "auto_custom_max"
+     },
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "label": "Image",
+     "name": "image"
+    }
+   ]

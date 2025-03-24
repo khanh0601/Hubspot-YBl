@@ -1,0 +1,37 @@
+<!-- module html  -->
+  <section class="ld-sol">
+    <div class="container grid">
+      <div class="ld-sol-title-wrap">
+        <h2 class="heading h2 ld-sol-title">{{module.title}}</h2>
+      </div>
+      <div class="ld-sol-content-wrap">
+        <div class="ld-sol-content-inner grid">
+          <div class="ld-sol-content ">
+            {% for item in module.item_solution %}
+              <div class="ld-sol-content-item">
+                <div class="ld-sol-content-item-img">
+                  <img src="{{item.image.src}}" alt="" class="img img-h">
+                </div>
+                <div class="ld-sol-content-item-inner">
+                  <div class="ld-sol-content-item-process"><div class="ld-sol-content-item-process-inner"></div></div>
+                  <p class="txt txt-14 txt-med ld-sol-content-item-numb">{{ "0" ~ loop.index if loop.index < 10 else loop.index }}</p>
+                  <h5 class="heading h5 ld-sol-content-item-title">{{item.title}}</h5>
+                  <p class="txt txt-16 ld-sol-content-item-desc">{{item.description}}</p>
+                </div>
+              </div>
+            {% endfor%}
+          </div>
+          <div class="ld-sol-img ">
+            {% for item in module.item_solution %}
+              <div class="ld-sol-img-item">
+                <div class="ld-sol-img-item-inner">
+                  <img src="{{item.image.src}}" alt="" class="img">
+                </div>
+              </div>
+            {% endfor%}
+          </div>
+        </div>
+        <div class="ld-sol-block"></div>
+      </div>
+    </div>
+  </section>

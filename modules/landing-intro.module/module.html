@@ -1,0 +1,18 @@
+<!-- module html  -->
+  <section class="ld-intro">
+    <div class="container ">
+      {% for item in module.item_introduce %}
+        <div class="ld-intro-item grid">
+          <div class="ld-intro-item-img">
+            <div class="ld-intro-item-img-inner">
+              <img src="{{item.image.src}}" alt="" class="img">
+            </div>
+          </div>
+          <div class="ld-intro-item-content">
+            <h2 class="heading h2 ld-intro-item-title">{{item.title}}</h2>
+            <p class="txt txt-16 ld-intro-item-desc">{{item.description}}</p>
+          </div>
+        </div>
+      {% endfor%}
+    </div>
+  </section>

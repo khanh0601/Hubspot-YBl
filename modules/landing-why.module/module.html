@@ -1,0 +1,24 @@
+<!-- module html  -->
+  <section class="ld-why">
+    <div class="container ">
+      <div class="ld-why-title-wrap">
+        <h2 class="heading h2 ld-why-title">{{module.title}}</h2>
+      </div>
+      <div class="ld-why-img">
+        <div class="ld-why-img-inner">
+          <img src="{{module.image.src}}" alt="" class="img">
+        </div>
+      </div>
+      <div class="ld-why-content ">
+        {% for item in module.item_reason %}
+          <div class="ld-why-content-item">
+            <div class="ld-why-content-item-line"></div>
+            <div class="ld-why-content-item-inner">
+              <h2 class="heading h5 ld-why-content-item-title">{{item.title}}</h2>
+              <p class="txt txt-16 ld-why-content-item-desc">{{item.description}}</p>
+            </div>
+          </div>
+        {% endfor%}
+      </div>
+    </div>
+  </section>

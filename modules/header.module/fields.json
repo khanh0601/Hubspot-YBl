@@ -1,0 +1,172 @@
+[
+    {
+     "type": "image",
+     "id": "5cd0af07-25d6-57ab-daaa-141cb16f38eb",
+     "default": {
+      "size_type": "auto",
+      "src": "https://40167303.fs1.hubspotusercontent-na1.net/hubfs/40167303/logo-ybl.svg",
+      "alt": "logo-ybl",
+      "loading": "lazy",
+      "width": 90,
+      "height": 24,
+      "max_width": 90,
+      "max_height": 24
+     },
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "label": "Logo",
+     "name": "logo"
+    },
+    {
+     "type": "group",
+     "id": "8c343db9-c328-297f-04bf-ae8e5d24e0a1",
+     "label": "Menu Item",
+     "children": [
+      {
+       "type": "text",
+       "id": "ad004db6-9d8f-d0ae-88fe-11e939976672",
+       "validation_regex": "",
+       "label": "Menu Text",
+       "name": "menu_text",
+       "default": "Home"
+      },
+      {
+       "type": "url",
+       "id": "2a7a2787-98f9-385f-d29d-e25ad80253fe",
+       "default": {
+        "content_id": null,
+        "href": "",
+        "type": "EXTERNAL"
+       },
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG",
+        "CALL_TO_ACTION",
+        "PHONE_NUMBER",
+        "WHATSAPP_NUMBER",
+        "PAYMENT"
+       ],
+       "label": "Menu Url",
+       "name": "menu_url"
+      }
+     ],
+     "name": "menu_item",
+     "default": [],
+     "occurrence": {}
+    },
+    {
+     "type": "group",
+     "id": "79dab589-ef07-b696-74d6-32832ebb37af",
+     "label": "SignIn",
+     "children": [
+      {
+       "type": "text",
+       "id": "cca31b11-49b8-9fe5-c48a-84fbb4a38fd8",
+       "validation_regex": "",
+       "label": "SignIn Text",
+       "name": "signin_text",
+       "default": "SIGN IN"
+      },
+      {
+       "type": "link",
+       "id": "be4e2710-91de-9e04-b374-e396d0fbe168",
+       "default": {
+        "url": {
+         "content_id": null,
+         "href": "https://app.faybl.com/signin",
+         "type": "EXTERNAL"
+        },
+        "open_in_new_tab": true,
+        "no_follow": false
+       },
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG",
+        "CALL_TO_ACTION",
+        "PHONE_NUMBER",
+        "WHATSAPP_NUMBER",
+        "PAYMENT"
+       ],
+       "label": "SignIn Url",
+       "name": "signin_url"
+      }
+     ],
+     "name": "signin",
+     "default": {
+      "signin_text": "SIGN IN",
+      "signin_url": {
+       "url": {
+        "content_id": null,
+        "href": "https://app.faybl.com/signin",
+        "type": "EXTERNAL"
+       },
+       "open_in_new_tab": true,
+       "no_follow": false
+      }
+     }
+    },
+    {
+     "type": "group",
+     "label": "Register",
+     "children": [
+      {
+       "type": "text",
+       "validation_regex": "",
+       "label": "Register Text",
+       "name": "register_text",
+       "default": "Register now",
+       "oldId": "cca31b11-49b8-9fe5-c48a-84fbb4a38fd8",
+       "id": "ad806320-9853-3ddc-7684-8a6225977d76"
+      },
+      {
+       "type": "link",
+       "default": {
+        "url": {
+         "content_id": null,
+         "href": "https://app.faybl.com/signup",
+         "type": "EXTERNAL"
+        },
+        "open_in_new_tab": true,
+        "no_follow": false
+       },
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG",
+        "CALL_TO_ACTION",
+        "PHONE_NUMBER",
+        "WHATSAPP_NUMBER",
+        "PAYMENT"
+       ],
+       "label": "Register Url",
+       "name": "register_url",
+       "oldId": "be4e2710-91de-9e04-b374-e396d0fbe168",
+       "id": "c2247eac-cd04-0c6a-46d8-2ff60afae1f4"
+      }
+     ],
+     "name": "register",
+     "default": {
+      "register_text": "Register now",
+      "register_url": {
+       "url": {
+        "content_id": null,
+        "href": "https://app.faybl.com/signup",
+        "type": "EXTERNAL"
+       },
+       "open_in_new_tab": true,
+       "no_follow": false
+      }
+     },
+     "oldId": "79dab589-ef07-b696-74d6-32832ebb37af",
+     "id": "87c9d615-c834-2816-6ec6-9b4dcf54f840"
+    }
+   ]

@@ -1,0 +1,18 @@
+<!-- module html  -->
+<section class="ld-cta">
+  <div class="container">
+    <div class="ld-cta-inner">
+      <div class="ld-cta-title-wrap">
+        <h2 class="heading h3 ld-cta-title">{{ module.title }}</h2>
+        <p class="txt txt-18 ld-cta-desc">{{module.description}}</p>
+      </div>
+      <div class="ld-cta-btn">
+        {% for item in module.button %}
+          <a href="{{ item.button_url.href }}" class="{% if loop.index == 1 %}btn btn-lg btn-white{% else %}btn btn-lg btn-orange{% endif %}">
+            <span class="txt txt-14 txt-bold">{{ item.button_text }}</span>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
