@@ -11,7 +11,7 @@
     color: var(--cl-white);
 }
 .ld-sol-title-wrap {
-    grid-column: 1/6;ß
+    grid-column: 1/6;
 }
 .ld-sol-content {
     grid-column: 1/5;

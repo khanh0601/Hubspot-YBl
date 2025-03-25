@@ -1,7 +1,5 @@
 [
     {
-     "type": "image",
-     "id": "5cd0af07-25d6-57ab-daaa-141cb16f38eb",
      "default": {
       "size_type": "auto",
       "src": "https://40167303.fs1.hubspotusercontent-na1.net/hubfs/40167303/logo-ybl.svg",
@@ -12,161 +10,108 @@
       "max_width": 90,
       "max_height": 24
      },
+     "display_width": null,
+     "id": "5cd0af07-25d6-57ab-daaa-141cb16f38eb",
+     "label": "Logo",
+     "locked": false,
+     "name": "logo",
+     "required": false,
      "resizable": true,
      "responsive": true,
      "show_loading": false,
-     "label": "Logo",
-     "name": "logo"
+     "type": "image"
     },
     {
-     "type": "group",
-     "id": "8c343db9-c328-297f-04bf-ae8e5d24e0a1",
-     "label": "Menu Item",
      "children": [
       {
-       "type": "text",
+       "allow_new_line": false,
+       "default": "Home",
+       "display_width": null,
        "id": "ad004db6-9d8f-d0ae-88fe-11e939976672",
-       "validation_regex": "",
        "label": "Menu Text",
+       "locked": false,
        "name": "menu_text",
-       "default": "Home"
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
       },
       {
-       "type": "url",
-       "id": "2a7a2787-98f9-385f-d29d-e25ad80253fe",
        "default": {
         "content_id": null,
         "href": "",
         "type": "EXTERNAL"
        },
-       "supported_types": [
-        "EXTERNAL",
-        "CONTENT",
-        "FILE",
-        "EMAIL_ADDRESS",
-        "BLOG",
-        "CALL_TO_ACTION",
-        "PHONE_NUMBER",
-        "WHATSAPP_NUMBER",
-        "PAYMENT"
-       ],
+       "display_width": null,
+       "id": "2a7a2787-98f9-385f-d29d-e25ad80253fe",
        "label": "Menu Url",
-       "name": "menu_url"
+       "locked": false,
+       "name": "menu_url",
+       "required": false,
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG",
+        "CALL_TO_ACTION",
+        "PHONE_NUMBER",
+        "WHATSAPP_NUMBER",
+        "PAYMENT"
+       ],
+       "type": "url"
       }
      ],
-     "name": "menu_item",
      "default": [],
-     "occurrence": {}
+     "display_width": null,
+     "expanded": false,
+     "group_occurrence_meta": null,
+     "id": "8c343db9-c328-297f-04bf-ae8e5d24e0a1",
+     "label": "Menu Item",
+     "locked": false,
+     "name": "menu_item",
+     "occurrence": {},
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
     },
     {
-     "type": "group",
-     "id": "79dab589-ef07-b696-74d6-32832ebb37af",
-     "label": "SignIn",
      "children": [
       {
-       "type": "text",
+       "allow_new_line": false,
+       "default": "Schedule a demo",
+       "display_width": null,
        "id": "cca31b11-49b8-9fe5-c48a-84fbb4a38fd8",
-       "validation_regex": "",
-       "label": "SignIn Text",
-       "name": "signin_text",
-       "default": "SIGN IN"
+       "label": "Schedule a demo Text",
+       "locked": false,
+       "name": "schedule_a_demo_text",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
       },
-      {
-       "type": "link",
-       "id": "be4e2710-91de-9e04-b374-e396d0fbe168",
-       "default": {
-        "url": {
-         "content_id": null,
-         "href": "https://app.faybl.com/signin",
-         "type": "EXTERNAL"
-        },
-        "open_in_new_tab": true,
-        "no_follow": false
-       },
-       "supported_types": [
-        "EXTERNAL",
-        "CONTENT",
-        "FILE",
-        "EMAIL_ADDRESS",
-        "BLOG",
-        "CALL_TO_ACTION",
-        "PHONE_NUMBER",
-        "WHATSAPP_NUMBER",
-        "PAYMENT"
-       ],
-       "label": "SignIn Url",
-       "name": "signin_url"
-      }
-     ],
-     "name": "signin",
-     "default": {
-      "signin_text": "SIGN IN",
-      "signin_url": {
-       "url": {
-        "content_id": null,
-        "href": "https://app.faybl.com/signin",
-        "type": "EXTERNAL"
-       },
-       "open_in_new_tab": true,
-       "no_follow": false
-      }
-     }
-    },
-    {
-     "type": "group",
-     "label": "Register",
-     "children": [
       {
        "type": "text",
+       "id": "b5cbe113-c06a-f7c0-4ade-f0d654ba358c",
        "validation_regex": "",
-       "label": "Register Text",
-       "name": "register_text",
-       "default": "Register now",
-       "oldId": "cca31b11-49b8-9fe5-c48a-84fbb4a38fd8",
-       "id": "ad806320-9853-3ddc-7684-8a6225977d76"
-      },
-      {
-       "type": "link",
-       "default": {
-        "url": {
-         "content_id": null,
-         "href": "https://app.faybl.com/signup",
-         "type": "EXTERNAL"
-        },
-        "open_in_new_tab": true,
-        "no_follow": false
-       },
-       "supported_types": [
-        "EXTERNAL",
-        "CONTENT",
-        "FILE",
-        "EMAIL_ADDRESS",
-        "BLOG",
-        "CALL_TO_ACTION",
-        "PHONE_NUMBER",
-        "WHATSAPP_NUMBER",
-        "PAYMENT"
-       ],
-       "label": "Register Url",
-       "name": "register_url",
-       "oldId": "be4e2710-91de-9e04-b374-e396d0fbe168",
-       "id": "c2247eac-cd04-0c6a-46d8-2ff60afae1f4"
+       "label": "Schedule a demo url",
+       "name": "schedule_a_demo_url",
+       "default": "mailto:contact@faybl.com"
       }
      ],
-     "name": "register",
      "default": {
-      "register_text": "Register now",
-      "register_url": {
-       "url": {
-        "content_id": null,
-        "href": "https://app.faybl.com/signup",
-        "type": "EXTERNAL"
-       },
-       "open_in_new_tab": true,
-       "no_follow": false
-      }
+      "schedule_a_demo_text": "Schedule a demo",
+      "schedule_a_demo_url": "mailto:contact@faybl.com"
      },
-     "oldId": "79dab589-ef07-b696-74d6-32832ebb37af",
-     "id": "87c9d615-c834-2816-6ec6-9b4dcf54f840"
+     "display_width": null,
+     "expanded": false,
+     "group_occurrence_meta": null,
+     "id": "79dab589-ef07-b696-74d6-32832ebb37af",
+     "label": "Schedule a demo",
+     "locked": false,
+     "name": "schedule_a_demo",
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
     }
    ]

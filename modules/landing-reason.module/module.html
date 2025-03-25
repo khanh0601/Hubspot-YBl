@@ -1,0 +1,34 @@
+<!-- module html  -->
+<section class="ld-reason" >
+  <div class="container">
+    <div class="ld-reason-title-wrap">
+      <div class="label-gr ld-reason-label">
+        <div class="ld-reason-label-ic">
+          <svg width="100%" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="4.5" cy="4" r="4" fill="currentColor"></circle>
+          </svg>
+        </div>
+        <span class="txt txt-16 txt-med">{{ module.label_text }}</span>
+      </div>
+      <h2 class="heading h2 ld-reason-title">{{module.title}}</h2>
+    </div>
+    <div class="ld-reason-list">
+      <div class="ld-reason-pagi"></div>
+      <div class="ld-reason-list-inner">
+        {% for item in module.item %}
+            <div class="ld-reason-item">
+              <div class="ld-reason-item-content">
+                <div class="ld-reason-item-title"><span class="heading h4">{{item.item_title}}</span></div>
+                <div class="ld-reason-item-sub"><span class="txt txt-16">{{item.item_description}}</span></div>
+              </div>
+              <div class="ld-reason-item-img">
+                <div class="ld-reason-item-img-inner">
+                  <img src="{{item.image.src}}" class="img" alt="">
+                </div>
+              </div>
+            </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Landing page New
+  screenshotPath: ../images/template-previews/landing-page.png
+-->
+{% extends "./layouts/base.html" %}
+
+
+{% block body %}
+  <div class="main-inner">
+  {% module "landing-feature" path="../modules/landing-feature.module", label="landing-feature" %}
+  {% module "landing-reason" path="../modules/landing-reason.module", label="landing-reason" %}
+  
+  </div>
+{% endblock body %}

@@ -1,0 +1,36 @@
+<!-- module html  -->
+  <section class="ld-feature" >
+    <div class="container container-fluid">
+      <div class="ld-feature-inner">
+        <div class="ld-feature-title-wrap">
+          <div class="label-gr ld-feature-label">
+            <div class="ld-feature-label-ic">
+              <svg width="100%" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="4.5" cy="4" r="4" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <span class="txt txt-16 txt-med">{{ module.label_text }}</span>
+          </div>
+          <h2 class="heading h2 ld-feature-title">{{module.title}}</h2>
+          <div class="txt txt-16 ld-feature-sub">{{module.description}}</div>
+        </div>
+        <div class="ld-feature-list">
+          <div class="ld-feature-pagi"></div>
+          <div class="ld-feature-list-inner">
+            {% for item in module.item %}
+               <div class="ld-feature-item">
+                  <div class="ld-feature-item-img">
+                    <img src="{{item.image.src}}" class="img" alt="">
+                  </div>
+                  <div class="div-line ld-feature-item-line"></div>
+                  <div class="ld-feature-item-content">
+                    <div class="ld-feature-item-title heading h4">{{item.item_title}}</div>
+                    <div class="ld-feature-item-sub txt txt-16">{{item.item_description}}</div>
+                  </div>
+               </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

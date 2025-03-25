@@ -30,50 +30,6 @@
      "default": "contact@ybl.ai"
     },
     {
-     "type": "url",
-     "id": "580b9d8e-b4a5-bea1-39cf-0c5a81b0bbed",
-     "default": {
-      "content_id": null,
-      "href": "",
-      "type": "EXTERNAL"
-     },
-     "supported_types": [
-      "EXTERNAL",
-      "CONTENT",
-      "FILE",
-      "EMAIL_ADDRESS",
-      "BLOG",
-      "CALL_TO_ACTION",
-      "PHONE_NUMBER",
-      "WHATSAPP_NUMBER",
-      "PAYMENT"
-     ],
-     "label": "Url Linkin",
-     "name": "url_linkin"
-    },
-    {
-     "type": "url",
-     "id": "d0e3f55f-c40c-e873-f812-12028fee1f08",
-     "default": {
-      "content_id": null,
-      "href": "",
-      "type": "EXTERNAL"
-     },
-     "supported_types": [
-      "EXTERNAL",
-      "CONTENT",
-      "FILE",
-      "EMAIL_ADDRESS",
-      "BLOG",
-      "CALL_TO_ACTION",
-      "PHONE_NUMBER",
-      "WHATSAPP_NUMBER",
-      "PAYMENT"
-     ],
-     "label": "Url Youtube",
-     "name": "url_youtube"
-    },
-    {
      "type": "group",
      "id": "58a5dc30-65b4-2b0a-5df3-87dbfd6b7e63",
      "label": "Address",
@@ -142,58 +98,5 @@
      "label": "Description",
      "name": "description",
      "default": "This material has been prepared by YB Life Pty Ltd (ACN 667 901 537) (YBL, ‘us’ or ‘we’). The material on this website is for general information only and is not an offer for the purchase or sale of any financial product or service.  The material is not intended to provide you with financial or tax advice and does not take into account your objectives, financial situation or needs.  Although we believe that the material is correct, no warranty of accuracy, reliability or completeness is given, except for liability under statute which cannot be excluded. Please note that past performance may not be indicative of future performance.  To the maximum extent possible, YBL, its related bodies corporate, and their officers do not accept any liability for any statement on this website."
-    },
-    {
-     "type": "group",
-     "id": "352209fd-570b-bf71-ecca-f89258f9f502",
-     "label": "Menu",
-     "children": [
-      {
-       "type": "text",
-       "id": "669beb21-f26c-864b-bca8-5125780054a7",
-       "validation_regex": "",
-       "label": "Title",
-       "name": "title",
-       "default": "Terms of use"
-      },
-      {
-       "type": "url",
-       "id": "b9cc7cda-444a-5ecb-b888-b37c3d20fcf2",
-       "default": {
-        "content_id": null,
-        "href": "",
-        "type": "EXTERNAL"
-       },
-       "supported_types": [
-        "EXTERNAL",
-        "CONTENT",
-        "FILE",
-        "EMAIL_ADDRESS",
-        "BLOG",
-        "CALL_TO_ACTION",
-        "PHONE_NUMBER",
-        "WHATSAPP_NUMBER",
-        "PAYMENT"
-       ],
-       "label": "Link",
-       "name": "link"
-      }
-     ],
-     "name": "menu",
-     "default": [
-      {
-       "title": "Terms of use",
-       "link": {
-        "content_id": null,
-        "href": "",
-        "type": "EXTERNAL"
-       }
-      }
-     ],
-     "occurrence": {
-      "min": 1,
-      "max": 2,
-      "default": 1
-     }
     }
    ]

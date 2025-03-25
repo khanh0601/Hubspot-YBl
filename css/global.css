@@ -1,50 +1,52 @@
-\* {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 @font-face {
-    font-family: "Inter";
-    src: url('{{ get_asset_url('/YBL_BP/fonts/Inter_Regular.woff2') }}'), format("woff2");
+    font-family: "Poppin";
+    src: url('{{ get_asset_url('/YBL_BP/fonts/Poppins-Regular.woff2') }}'), format("woff2");
     font-weight: 400;
 }
 @font-face {
-    font-family: "Inter";
-    src: url('{{ get_asset_url('/YBL_BP/fonts/Inter_Medium.woff2') }}'), format("woff2");
+    font-family: "Poppin";
+    src: url('{{ get_asset_url('/YBL_BP/fonts/Poppins-Medium.woff2') }}'), format("woff2");
     font-weight: 500;
 }
 @font-face {
-    font-family: "Inter";
-    src: url('{{ get_asset_url('/YBL_BP/fonts/Inter_SemiBold.woff2') }}'), format("woff2");
-    font-weight: 600;
-}
-@font-face {
-    font-family: "Inter";
-    src: url('{{ get_asset_url('/YBL_BP/fonts/Inter_Bold.woff2') }}'), format("woff2");
-    font-weight: 700;
+    font-family: "Urbanist";
+    src: url('{{ get_asset_url('/YBL_BP/fonts/Urbanist-Medium.woff2') }}'), format("woff2");
 }
 :root{
-    --padding-container: 14.8rem;
+    --padding-container: 8rem;
     --col-gap: 4rem;
     --col-grid: repeat(12, 1fr);
-    --cl-black: #000;
+    --cl-black: #1D1D1D;
+    --cl-black-80: #1D1D1DCC;
+    --cl-black-10: #1D1D1D1A;
+    --cl-black-20: #1D1D1D33;
+    --cl-black-40: #1D1D1D66;
     --cl-white: #fff;
+    --cl-white-20: #FFFFFF33;
     --cl-body: #121212;
     --cl-sub: #858585;
     --cl-orange: #FF5733;
-    --cl-orange-dark: #F14D19;
+    --cl-orange-dark: #D4482A;
     --cl-disable: #C2C2C2;
     --cl-border: #DCDFE8;
-    --cl-grey: #EEF0F5;
+    --cl-grey: #F3F3F3;
+    --cl-blue-light: #E3E5FF;
+    --cl-blue: #003366;
 }
 html {
-    font-size: 0.625vw;
+    font-size: 0.5787037037vw;
   -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 body {
-    font-family: 'Inter';
+    font-family: 'Poppin';
     color: var(--cl-black);
+    margin: 0 !important;
 }
 html.lenis, html.lenis body {
     height: auto;
@@ -83,28 +85,32 @@ html.lenis, html.lenis body {
     transform-origin: left;
   }
 .container{
-    max-width: 1600px;
+    max-width: 2560px;
     margin-inline: auto;
     padding-inline: var(--padding-container);
+    position: relative;
+}
+.container.container-fluid{
+    padding-inline: 2rem;
 }
 .grid{
     display: grid;
     grid-template-columns: var(--col-grid);
     grid-column-gap: var(--col-gap);
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 2560px) {
     html {
-      font-size: 10px;
+      font-size: 14.8148148148px;
   }
 }
 @media only screen and (max-width: 991px) {
     html {
-      font-size: 1.302vw;
+      font-size: 1.1990407674vw;
   }
 }
 @media only screen and (max-width: 767px) {
     html {
-      font-size: 2.666vw;
+      font-size: 2.5445292621vw;
   }
 } 
 @media screen and (min-device-aspect-ratio: 16 / 9) {
@@ -131,6 +137,10 @@ html.lenis, html.lenis body {
     height: 1px;
     position: relative;
 }
+.div-line{
+    width: 100%;
+    height: 1px;
+}
 .hover-un{
     position: relative;
 }
@@ -146,6 +156,9 @@ html.lenis, html.lenis body {
     height: 100%;
     object-fit: cover;
     width: 100%;
+}
+.txt{
+    margin: 0
 }
 .txt-link{
     color:  inherit;
@@ -182,38 +195,48 @@ html.lenis, html.lenis body {
     font-weight: 700;
 }
 .heading{
-    font-weight: 600;
+    font-family: "Urbanist";
+    font-weight: 500;
+    letter-spacing: -.03em;
+    margin: 0;
+}
+.h0{
+    font-size: 9rem;
+    line-height: 1em;
+    letter-spacing: 0;
 }
 .h1{
-    font-size: 10rem;
-    line-height: 1.1em;
+    font-size: 6.4rem;
+    line-height: 1em;
 }
 .h2{
-    font-size: 7rem;
-    line-height: 1.1em;
+    font-size: 5.4rem;
+    line-height: 1em;
 }
 .h3{
-    font-size: 5.6rem;
-    line-height: 1.1em;
+    font-size: 4.4rem;
+    line-height: 1.2em;
 }
 .h4{
-    font-size: 4.4rem;
-    line-height: 1.1em;
+    font-size: 3.2rem;
+    line-height: 1.2em;
 }
 .h5{
     font-size: 2.4rem;
-    line-height: 1.3em;
+    line-height: 1.2em;
 }
 .h6{
     font-size: 2rem;
-    line-height: 1.3em;
+    line-height: 1.2em;
 }
 .btn{
-    border-radius: 2.2rem;
-    padding: 1.1rem 2rem;
+    border-radius: 1rem;
+    padding: 1.8rem 2.4rem;
     transition: background-color .4s, color  .4s;
     text-decoration: none;
-    text-transform: uppercase;
+}
+.btn .txt{
+    line-height: 1em !important;
 }
 .btn-orange{
     background-color: var(--cl-orange);
@@ -234,12 +257,23 @@ html.lenis, html.lenis body {
     padding: 1.9rem 6rem;
     border-radius: 3rem
 }
+.label-gr{
+    padding: .4rem 1.2rem .4rem .8rem;
+    border-radius: 3rem;
+    display: flex;
+    column-gap: .8rem;
+    width: fit-content;
+    align-items: center;
+}
 [data-init-df] {
     opacity: 0;
 }
 @media only screen and (max-width: 991px) {
+    .container.container-fluid{
+        padding-inline: 1rem;
+    }
     :root{
-        --padding-container: 4rem;
+        --padding-container: 3.2rem;
         --col-gap: 2.4rem;
         --col-grid: repeat(8, 1fr);
     }
@@ -247,36 +281,24 @@ html.lenis, html.lenis body {
         font-size: 6rem;
     }
     .h2{
-        font-size: 4.8rem;
-    }
-    .h3{
         font-size: 4.4rem;
     }
-    .h4{
+    .h3{
         font-size: 3.6rem;
+    }
+    .h4{
+        font-size: 3.2rem;
+    }
+    .h5{
+        font-size: 2.4rem;
+    }
+    .h6{
+        font-size: 2rem;
     }
 }
 @media only screen and (max-width: 767px) {
-    .h1{
-        font-size: 4.4rem;
-    }
-    .h2{
-        font-size: 3.6rem;
-    }
-    .h3{
-        font-size: 3.2rem;
-    }
-    .h4{
-        font-size: 2.8rem;
-    }
-    .h5{
-        font-size: 2rem;
-    }
-    .h6{
-        font-size: 1.8rem;
-    }
     :root{
-        --padding-container: 2rem;
+        --padding-container: 1rem;
         --col-gap: 2rem;
         --col-grid: repeat(2, 1fr);
     }

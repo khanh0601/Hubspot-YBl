@@ -1,0 +1,102 @@
+[
+    {
+     "type": "text",
+     "id": "4aa79034-14b6-e71a-1a90-f029775ca297",
+     "validation_regex": "",
+     "label": "Label Text",
+     "name": "label_text",
+     "default": "Features"
+    },
+    {
+     "allow_new_line": false,
+     "default": "Smart features to elevate your day-to-day",
+     "display_width": null,
+     "id": "3f922bf4-a5ee-6f85-ff8d-7b46235d9dc7",
+     "label": "Title",
+     "locked": false,
+     "name": "title",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "allow_new_line": false,
+     "default": "FAYBL is the one-stop AI solution for financial professionals, streamlining workflows and enhancing efficiency through smart automation and seamless integrations.",
+     "display_width": null,
+     "id": "e63b134a-745e-f25d-9326-e4ba4a47bafa",
+     "label": "Description",
+     "locked": false,
+     "name": "description",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "type": "group",
+     "id": "b66bae3c-d4f8-65c3-a9a6-4de9c7de7e5c",
+     "label": "Item",
+     "children": [
+      {
+       "type": "image",
+       "id": "7521df13-ff1c-fdf6-7554-eabf3dad44a4",
+       "default": {
+        "size_type": "auto",
+        "src": "https://40167303.fs1.hubspotusercontent-na1.net/hubfs/40167303/feature1.png",
+        "alt": "feature1",
+        "loading": "lazy",
+        "width": 966,
+        "height": 940,
+        "max_width": 966,
+        "max_height": 940
+       },
+       "resizable": true,
+       "responsive": true,
+       "show_loading": false,
+       "label": "Image",
+       "name": "image"
+      },
+      {
+       "type": "text",
+       "id": "5f2c6624-a725-b9ee-3540-0fc25f51e109",
+       "validation_regex": "",
+       "label": "Item Title",
+       "name": "item_title",
+       "default": "Multi-Task Capability"
+      },
+      {
+       "type": "text",
+       "id": "24d8c384-2a26-a77c-d205-59b2296704e0",
+       "validation_regex": "",
+       "label": "Item Description",
+       "name": "item_description",
+       "default": "Juggle tasks seamlessly - copilot handles multiple processes, keeping you efficient and organized."
+      }
+     ],
+     "name": "item",
+     "default": [
+      {
+       "image": {
+        "size_type": "auto",
+        "src": "https://40167303.fs1.hubspotusercontent-na1.net/hubfs/40167303/feature1.png",
+        "alt": "feature1",
+        "loading": "lazy",
+        "width": 966,
+        "height": 940,
+        "max_width": 966,
+        "max_height": 940
+       },
+       "item_title": "Multi-Task Capability",
+       "item_description": "Juggle tasks seamlessly - copilot handles multiple processes, keeping you efficient and organized."
+      }
+     ],
+     "visibility": null,
+     "occurrence": {
+      "min": 1,
+      "max": 3,
+      "default": 1,
+      "sorting_label_field": "5f2c6624-a725-b9ee-3540-0fc25f51e109"
+     }
+    }
+   ]

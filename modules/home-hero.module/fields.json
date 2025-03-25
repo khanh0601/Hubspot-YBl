@@ -1,0 +1,76 @@
+[
+    {
+     "allow_new_line": false,
+     "default": "Ready to Experience the Future of Financial Planning?",
+     "display_width": null,
+     "id": "2708e2fa-34b6-3a02-9a4a-695636d95fa2",
+     "label": "Title",
+     "locked": false,
+     "name": "title",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "type": "text",
+     "id": "14decdbf-0201-f72a-701b-6955e1940b86",
+     "validation_regex": "",
+     "label": "Description",
+     "name": "description",
+     "default": "Discover how the YBL copilot can transform your workflow today."
+    },
+    {
+     "type": "group",
+     "id": "9637ca51-bc26-4acd-86df-7110d2029860",
+     "label": "Button",
+     "children": [
+      {
+       "type": "text",
+       "id": "6d7950e6-bd78-e8be-1912-9cdd53488b13",
+       "validation_regex": "",
+       "label": "Button Text",
+       "name": "button_text",
+       "default": "learn more"
+      },
+      {
+       "type": "url",
+       "id": "c6339042-e15b-79c9-fb36-79a21f7d1dcd",
+       "default": {
+        "content_id": null,
+        "href": "",
+        "type": "EXTERNAL"
+       },
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG",
+        "CALL_TO_ACTION",
+        "PHONE_NUMBER",
+        "WHATSAPP_NUMBER",
+        "PAYMENT"
+       ],
+       "label": "Button Url",
+       "name": "button_url"
+      }
+     ],
+     "name": "button",
+     "default": [
+      {
+       "button_text": "learn more",
+       "button_url": {
+        "content_id": null,
+        "href": "",
+        "type": "EXTERNAL"
+       }
+      }
+     ],
+     "occurrence": {
+      "min": 1,
+      "max": 2,
+      "default": 1
+     }
+    }
+   ]
