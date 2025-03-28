@@ -15,7 +15,7 @@ class LandingReason extends TriggerSetup {
                     spaceBetween: parseRem(20),
                     breakpoints: {
                         "768": {
-                            slidesPerView: "auto",
+                            slidesPerView: 2,
                             spaceBetween: parseRem(24)
                         }
                     },
@@ -27,6 +27,27 @@ class LandingReason extends TriggerSetup {
                     }
                 });
         }
+        new MasterTimeline({
+            triggerInit: this.triggerEl,
+            scrollTrigger: { trigger: '.ld-reason' },
+            tweenArr: [
+                new FadeIn({ el: '.ld-reason-label'}),
+                new FadeIn({ el: '.ld-reason-title'}),
+            ]
+        }) 
+        new MasterTimeline({
+            triggerInit: this.triggerEl,
+            scrollTrigger: { trigger: '.ld-reason-list' },
+            tweenArr: [
+                ...Array.from($('.ld-reason-item')).flatMap((item, idx) =>{
+                    return [
+                        new FadeIn({el : $(item).find('.ld-reason-item-title')}),
+                        new FadeIn({el : $(item).find('.ld-reason-item-sub')}),
+                        new ScaleInset({ el : $(item).find('.ld-reason-item-img-inner').get(0)})
+                    ]
+                })
+            ]
+        }) 
     }
 }
 let landingReason = new LandingReason('.ld-reason');

@@ -16,7 +16,7 @@ class LandingFeature extends TriggerSetup {
                     breakpoints: {
                         "768": {
                             slidesPerView: "auto",
-                            spaceBetween: parseRem(40)
+                            spaceBetween: parseRem(24)
                         }
                     },
                     pagination: {
@@ -27,15 +27,28 @@ class LandingFeature extends TriggerSetup {
                     }
                 });
         }
-        // new MasterTimeline({
-        //     triggerInit: this.triggerEl,
-        //     scrollTrigger: { trigger: '.ld-feature' },
-        //     tweenArr: [
-        //         new FadeIn({ el: '.ld-feature-label' }),
-        //         new FadeIn({ el: '.ld-feature-title' }),
-        //         new FadeIn({ el: '.ld-feature-sub' })
-        //     ]
-        // })
+        new MasterTimeline({
+            triggerInit: this.triggerEl,
+            scrollTrigger: { trigger: '.ld-feature' },
+            tweenArr: [
+                new FadeIn({ el: '.ld-feature-label'}),
+                new FadeIn({ el: '.ld-feature-title'}),
+                new FadeIn({ el: '.ld-feature-sub'}),
+            ]
+        }) 
+        new MasterTimeline({
+            triggerInit: this.triggerEl,
+            scrollTrigger: { trigger: '.ld-feature-list' },
+            tweenArr: [
+                ...Array.from($('.ld-feature-item')).flatMap((item, idx) =>{
+                    return [
+                        new ScaleInset({ el : $(item).find('.ld-feature-item-img').get(0)}),
+                        new FadeIn({el : $(item).find('.ld-feature-item-title'), delay: "<= .3"}),
+                        new FadeIn({el : $(item).find('.ld-feature-item-sub')}),
+                    ]
+                })
+            ]
+        }) 
     }
 }
 let landingFeature = new LandingFeature('.ld-feature');

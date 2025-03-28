@@ -1,6 +1,26 @@
 <!-- module html  -->
-  <section class="ld-hero" >
-    <div class="container grid">
-      
+  <section class="ld-hero" data-section="no-fixed">
+    <div class="container container-fluid">
+      <div class="ld-hero-inner grid">
+        <div class="ld-hero-title-wrap" data-init-df>
+          <h1 class="heading h0 ld-hero-title">{{ module.title}}</h1>
+          <div class="txt txt-16 ld-hero-sub"> {{ module.description }}</div>
+          <div class="ld-hero-ic">
+            <img src="https://40167303.fs1.hubspotusercontent-na1.net/hubfs/40167303/icon-hero.png" alt="" class="img">
+          </div>
+        </div>
+        <div class="ld-hero-img" data-init-df>
+          <img src="{{ module.image.src}}" alt="" class="img">
+        </div>
+        <div class="ld-hero-form" data-init-df id="form">
+          <div class="heading h3 ld-hero-form-title">{{ module.title_form}}</div>
+          <div class="ld-hero-form-inner">
+            {% form
+              no_title='{{ no_title }}',
+              form_to_use='c21a930e-c45c-493a-80ee-87e18490042d',
+            %}
+          </div>
+        </div>
+      </div>
     </div>
   </section>

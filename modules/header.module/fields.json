@@ -25,60 +25,6 @@
      "children": [
       {
        "allow_new_line": false,
-       "default": "Home",
-       "display_width": null,
-       "id": "ad004db6-9d8f-d0ae-88fe-11e939976672",
-       "label": "Menu Text",
-       "locked": false,
-       "name": "menu_text",
-       "required": false,
-       "show_emoji_picker": false,
-       "type": "text",
-       "validation_regex": ""
-      },
-      {
-       "default": {
-        "content_id": null,
-        "href": "",
-        "type": "EXTERNAL"
-       },
-       "display_width": null,
-       "id": "2a7a2787-98f9-385f-d29d-e25ad80253fe",
-       "label": "Menu Url",
-       "locked": false,
-       "name": "menu_url",
-       "required": false,
-       "supported_types": [
-        "EXTERNAL",
-        "CONTENT",
-        "FILE",
-        "EMAIL_ADDRESS",
-        "BLOG",
-        "CALL_TO_ACTION",
-        "PHONE_NUMBER",
-        "WHATSAPP_NUMBER",
-        "PAYMENT"
-       ],
-       "type": "url"
-      }
-     ],
-     "default": [],
-     "display_width": null,
-     "expanded": false,
-     "group_occurrence_meta": null,
-     "id": "8c343db9-c328-297f-04bf-ae8e5d24e0a1",
-     "label": "Menu Item",
-     "locked": false,
-     "name": "menu_item",
-     "occurrence": {},
-     "required": false,
-     "tab": "CONTENT",
-     "type": "group"
-    },
-    {
-     "children": [
-      {
-       "allow_new_line": false,
        "default": "Schedule a demo",
        "display_width": null,
        "id": "cca31b11-49b8-9fe5-c48a-84fbb4a38fd8",
@@ -89,14 +35,6 @@
        "show_emoji_picker": false,
        "type": "text",
        "validation_regex": ""
-      },
-      {
-       "type": "text",
-       "id": "b5cbe113-c06a-f7c0-4ade-f0d654ba358c",
-       "validation_regex": "",
-       "label": "Schedule a demo url",
-       "name": "schedule_a_demo_url",
-       "default": "mailto:contact@faybl.com"
       }
      ],
      "default": {

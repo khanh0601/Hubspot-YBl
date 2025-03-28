@@ -1,4 +1,4 @@
-class LandingFeature extends TriggerSetup {
+class LandingHero extends TriggerSetup {
     constructor(triggerEl) {
         super(triggerEl);
     }
@@ -6,37 +6,21 @@ class LandingFeature extends TriggerSetup {
         super.setTrigger(this.setup.bind(this));
     }
     setup() {
-        if(viewport.w < 992){
-            $('.ld-feature-list').addClass('swiper');
-                $('.ld-feature-list-inner').addClass('swiper-wrapper');
-                $('.ld-feature-item').addClass('swiper-slide');
-                let swiper = new Swiper('.ld-feature-list', {
-                    slidesPerView: 1,
-                    spaceBetween: parseRem(24),
-                    breakpoints: {
-                        "768": {
-                            slidesPerView: "auto",
-                            spaceBetween: parseRem(40)
-                        }
-                    },
-                    pagination: {
-                        el: '.ld-feature-pagi',
-                        bulletClass: 'ld-feature-pagi-item',
-                        bulletActiveClass: 'active',
-                        clickable: true,
-                    }
-                });
-        }
-        // new MasterTimeline({
-        //     triggerInit: this.triggerEl,
-        //     scrollTrigger: { trigger: '.ld-feature' },
-        //     tweenArr: [
-        //         new FadeIn({ el: '.ld-feature-label' }),
-        //         new FadeIn({ el: '.ld-feature-title' }),
-        //         new FadeIn({ el: '.ld-feature-sub' })
-        //     ]
-        // })
+       $('.ld-hero-form').on('click','.submitted-message p:last-child', function(){
+        location.reload();
+       })
+       new MasterTimeline({
+            triggerInit: this.triggerEl,
+            scrollTrigger: { trigger: '.ld-hero' },
+            tweenArr: [
+                new FadeIn({ el: '.ld-hero-title'}),
+                new FadeIn({ el: '.ld-hero-sub', delay: "<=.2"}),
+                new FadeIn({ el: '.ld-hero-ic', delay: "<=.2"}),
+                new FadeIn({ el: '.ld-hero-img'}),
+                new FadeIn({ el: '.ld-hero-form'}),
+            ]
+        }) 
     }
 }
-let landingFeature = new LandingFeature('.ld-feature');
-landingFeature.trigger();
+let landingHero = new LandingHero('.ld-hero');
+landingHero.trigger();

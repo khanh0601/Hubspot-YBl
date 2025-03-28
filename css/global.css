@@ -19,7 +19,7 @@
 }
 :root{
     --padding-container: 8rem;
-    --col-gap: 4rem;
+    --col-gap: 2.4rem;
     --col-grid: repeat(12, 1fr);
     --cl-black: #1D1D1D;
     --cl-black-80: #1D1D1DCC;
@@ -274,8 +274,11 @@ html.lenis, html.lenis body {
     }
     :root{
         --padding-container: 3.2rem;
-        --col-gap: 2.4rem;
+        --col-gap: 1.6rem;
         --col-grid: repeat(8, 1fr);
+    }
+    .h0{
+        font-size: 4.8rem;
     }
     .h1{
         font-size: 6rem;
@@ -299,7 +302,6 @@ html.lenis, html.lenis body {
 @media only screen and (max-width: 767px) {
     :root{
         --padding-container: 1rem;
-        --col-gap: 2rem;
         --col-grid: repeat(2, 1fr);
     }
     .ld-sol-content-item-title{

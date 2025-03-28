@@ -1,0 +1,273 @@
+.ld-hero{
+    margin-block: 2rem;
+}
+.ld-hero-inner {
+    padding-block: 17.2rem 12rem;
+    padding-inline: 6rem;
+    border-radius: 4rem;
+    background-color: var(--cl-grey);
+}
+.ld-hero-ic {
+    width: 10rem;
+    position: absolute;
+    top: calc(100% + 1rem);
+    right: 0rem;
+}
+.ld-hero-title-wrap{
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    margin-bottom: 9.4rem;
+    position: relative;
+}
+.ld-hero-title {
+    max-width: 100rem;
+    margin-bottom: 1.6rem;
+    text-align: center;
+}
+.ld-hero-sub {
+    text-align: center;
+    color: var(--cl-black-80);
+}
+.ld-hero-img {
+    grid-column: 1/9;
+    grid-row: 2/3;
+    padding-right: 2rem;
+}
+.ld-hero-form{
+    grid-row: 2/3;
+    grid-column: 9/-1;
+    padding: 4rem;
+    border-radius: 2rem;
+    background-color: var(--cl-white);
+    margin-left: -2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: max-content;
+    margin-top: 2.8rem;
+    box-shadow: 0 .8rem 2.4rem 0 rgba(149, 157, 165, 0.20);
+    
+}
+.ld-hero-form .input{
+    margin-right: 0 !important;
+    position: relative;
+}
+.ld-hero-form .input input{
+    border: 1px solid transparent ;
+    font-size: 1.6rem;
+    color: var(--cl-black);
+    padding: 1.6rem 2rem;
+    border-radius: 1rem;
+    background-color: var(--cl-grey);
+    width: 100% !important;
+    transition: all ease .4s;
+}
+.ld-hero-form .input input:focus-visible{
+    outline: none !important;
+    border-color: #C0A5FA;
+}
+.ld-hero-form .input input.error{
+    border-color: #DE350B;
+}
+.ld-hero-form-title{
+    margin-bottom: 3.2rem;
+}
+.ld-hero-form fieldset{
+    width: 100%;
+    max-width: none !important;
+    display: flex;
+    column-gap: 1.4rem;
+    margin-bottom: 4.2rem !important;
+}
+.ld-hero-form .hs-form-field{
+    flex: 1;
+    position: relative;
+}
+.ld-hero-form .hs-form-required{
+    display: none;
+}
+.ld-hero-form label{
+    font-size: 1.4rem;
+    line-height: 1.4em;
+    color: #546284;
+    font-weight: 500;
+    margin-bottom: .8rem !important;
+    display: block;
+}
+.ld-hero-form .hs_submit{
+    margin-top: 5.2rem;
+}
+.ld-hero-form .hs_submit input{
+    border: none;
+    padding: 2.4rem 3.2rem;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: var(--cl-orange);
+    color: var(--cl-white);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1em;
+    transition: background-color .4s ease;
+    cursor: pointer;
+}
+.ld-hero-form .hs_submit input:hover{
+    background-color: var(--cl-orange-dark);
+}
+.ld-hero-form .hs-error-msgs{
+    list-style: none;
+    position: absolute;
+    top: calc(100% + .4rem);
+    left: 0;
+}
+.ld-hero-form .hs-error-msgs label{
+    color: #DE350B;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.hs_error_rollup{
+    display: none ;
+}
+.ld-hero-form .submitted-message{
+    position: absolute;
+    border-radius: 2rem;
+    background-color: var(--cl-white);
+    z-index: 10;
+    inset: 0;
+    padding: 4rem;
+    height: max-content;
+}
+.ld-hero-form .submitted-message p{
+    font-size: 1.6rem;
+    line-height: 1.5em;
+}
+.ld-hero-form .submitted-message p:first-child{
+    font-size: 4.4rem;
+    line-height: 1.2em;
+    letter-spacing: -.03em;
+    margin-bottom: 4rem;
+    /* font-weight: 500; */
+}
+.ld-hero-form .submitted-message p:last-child {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+    margin-top: 4rem;
+    padding: 2.4rem 3.2rem;
+    background-color: var(--cl-orange);
+    border-radius: 1rem;
+    transition: all .4s ease;
+    text-align: center;
+    cursor: pointer;
+}
+.ld-hero-form .submitted-message p:last-child:hover{
+    background-color: var(--cl-orange-dark);
+}
+@media only screen and (max-width: 991px) {
+    .ld-hero-form .submitted-message{
+        background-color: var(--cl-grey);
+        padding: 4rem 2rem;
+    }
+    .ld-hero-form .submitted-message p:first-child{
+        font-size: 3.6rem;
+        margin-bottom: 4rem;
+    }
+    .ld-hero-form .submitted-message p:last-child {
+        padding-block: 2rem;
+    }
+    .ld-hero-img {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        padding-right: 2rem;
+    }
+    .ld-hero-form .input input{
+        background-color: white;
+    }
+    .ld-hero{
+        padding-block: 8.8rem 0;
+    }
+    .ld-hero-title-wrap {
+        margin-bottom: 7rem;
+    }
+    .ld-hero-inner {
+        padding: 4rem 2rem 0 2rem;  
+        border-radius: 2rem
+    }
+    .ld-hero-img{
+        padding-right: 0;
+        transform: translateX(1rem);
+    }
+    .ld-hero-ic {
+        display: none;
+    }
+    .ld-hero-form{
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        min-height: unset;
+        padding: 4rem 0 6rem 0;
+        max-width: 57.4rem;
+        width: 100%;
+        margin-inline: auto;
+        background-color: unset;
+        box-shadow: none;
+        margin-top: 0;
+        min-height: 43rem;
+    }
+    .ld-hero .container{
+        padding-inline: 1rem;
+    }
+    .ld-hero-form-title{
+        max-width: 41.6rem;
+        margin-inline: auto ;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .ld-hero-form .hs_submit{
+        margin-top: 4rem;
+    }
+    .ld-hero-form .input input{
+        border-radius: 1rem;
+    }
+}
+@media only screen and (max-width: 767px) {
+     .ld-hero-form .submitted-message p:first-child{
+        font-size: 2.4rem;
+        margin-bottom: 2.4rem;
+    }
+    .ld-hero-img{
+        transform: translateX(.4rem);
+    }
+    .ld-hero{
+        padding-block: 6.8rem 0;
+        margin-block: 0 1rem;
+    }
+    .ld-hero-inner {
+        padding-inline: 1rem;
+        border-radius: 1.6rem;
+    }
+    .ld-hero-title {
+        font-size: 3.6rem;
+    }
+    .ld-hero-title-wrap {
+        margin-bottom: 4rem;
+    }
+    .ld-hero-form{
+        padding-inline: 1rem;
+        padding-block: 4rem 6rem;
+    }
+    .ld-hero-form fieldset{
+        margin-bottom: 2.8rem !important;
+        flex-direction: column;
+        row-gap: 2.8rem;
+    }
+    .ld-hero-form-title.h3{
+        font-size: 2.4rem;
+        max-width: 23.5rem;
+    }
+    .ld-hero-form{
+        border-radius: 1.6rem;
+    }
+}  
+ 
