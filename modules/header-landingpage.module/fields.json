@@ -1,0 +1,55 @@
+[
+    {
+     "default": {
+      "size_type": "auto",
+      "src": "https://40167303.fs1.hubspotusercontent-na1.net/hubfs/40167303/logo-ybl.svg",
+      "alt": "logo-ybl",
+      "loading": "lazy",
+      "width": 90,
+      "height": 24,
+      "max_width": 90,
+      "max_height": 24
+     },
+     "display_width": null,
+     "id": "5cd0af07-25d6-57ab-daaa-141cb16f38eb",
+     "label": "Logo",
+     "locked": false,
+     "name": "logo",
+     "required": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image"
+    },
+    {
+     "children": [
+      {
+       "allow_new_line": false,
+       "default": "Schedule a demo",
+       "display_width": null,
+       "id": "cca31b11-49b8-9fe5-c48a-84fbb4a38fd8",
+       "label": "Schedule a demo Text",
+       "locked": false,
+       "name": "schedule_a_demo_text",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      }
+     ],
+     "default": {
+      "schedule_a_demo_text": "Schedule a demo",
+      "schedule_a_demo_url": "mailto:contact@faybl.com"
+     },
+     "display_width": null,
+     "expanded": false,
+     "group_occurrence_meta": null,
+     "id": "79dab589-ef07-b696-74d6-32832ebb37af",
+     "label": "Schedule a demo",
+     "locked": false,
+     "name": "schedule_a_demo",
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
+    }
+   ]

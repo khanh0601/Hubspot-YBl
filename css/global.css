@@ -26,8 +26,12 @@
     --cl-black-10: #1D1D1D1A;
     --cl-black-20: #1D1D1D33;
     --cl-black-40: #1D1D1D66;
+    --cl-black-70: #000000B2;
     --cl-white: #fff;
     --cl-white-20: #FFFFFF33;
+    --cl-white-15: #FFFFFF26;
+    --cl-white-60: #FFFFFF99;
+    --cl-white-70: #FFFFFFB2;
     --cl-body: #121212;
     --cl-sub: #858585;
     --cl-orange: #FF5733;
@@ -121,6 +125,9 @@ html.lenis, html.lenis body {
         }
     }
 }
+a {
+    text-decoration: none;
+}
 .line.line-hover {
     position: absolute;
     bottom: .1em;
@@ -164,7 +171,14 @@ html.lenis, html.lenis body {
     color:  inherit;
     text-decoration: none;
 }
-
+.txt-14{
+    font-size: 1.4rem;
+    line-height: 1.5em;
+}
+.txt-12{
+    font-size: 1.2rem;
+    line-height: 1.5em;
+}
 .txt-16{
     font-size: 1.6rem;
     line-height: 1.5em;
@@ -177,14 +191,15 @@ html.lenis, html.lenis body {
     font-size: 2rem;
     line-height: 1.5em;
 }
-.txt-14{
-    font-size: 1.4rem;
+.txt-24{
+    font-size: 2.4rem;
     line-height: 1.5em;
 }
-.txt-12{
-    font-size: 1.2rem;
-    line-height: 1.5em;
+.txt-32{
+    font-size: 3.2rem;
+    line-height: 1.4em;
 }
+
 .txt-med{
     font-weight: 500;
 }
@@ -252,6 +267,13 @@ html.lenis, html.lenis body {
 .btn-white:hover{
     background-color: var(--cl-orange);
     color: var(--cl-white);
+}
+.btn-black {
+    background-color: var(--cl-black);
+    color: var(--cl-white);
+}
+.btn-black:hover {
+    background-color: var(--cl-orange);
 }
 .btn-lg{
     padding: 1.9rem 6rem;

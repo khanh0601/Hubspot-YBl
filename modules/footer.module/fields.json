@@ -22,37 +22,179 @@
      "type": "image"
     },
     {
-     "type": "text",
+     "allow_new_line": false,
+     "default": "contact@ybl.ai",
+     "display_width": null,
      "id": "92024391-a710-7602-300b-9f58e5dadfe6",
-     "validation_regex": "",
      "label": "Email",
+     "locked": false,
      "name": "email",
-     "default": "contact@ybl.ai"
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "type": "text",
+     "id": "d43aad99-1ef4-8ec9-d068-76781778054c",
+     "validation_regex": "",
+     "label": "Social Label",
+     "name": "social_label"
+    },
+    {
+     "type": "url",
+     "id": "57f7108e-d239-461b-3d40-c7265b7dcd56",
+     "default": {
+      "content_id": null,
+      "href": "",
+      "type": "EXTERNAL"
+     },
+     "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS",
+      "BLOG",
+      "CALL_TO_ACTION",
+      "PHONE_NUMBER",
+      "WHATSAPP_NUMBER",
+      "PAYMENT"
+     ],
+     "label": "Link Linkin",
+     "name": "link_linkin"
+    },
+    {
+     "type": "url",
+     "id": "0add027e-3076-01a0-84b7-d09aec988969",
+     "default": {
+      "content_id": null,
+      "href": "",
+      "type": "EXTERNAL"
+     },
+     "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS",
+      "BLOG",
+      "CALL_TO_ACTION",
+      "PHONE_NUMBER",
+      "WHATSAPP_NUMBER",
+      "PAYMENT"
+     ],
+     "label": "Link Youtube",
+     "name": "link_youtube"
+    },
+    {
+     "children": [
+      {
+       "allow_new_line": false,
+       "default": "Australia",
+       "display_width": null,
+       "id": "6784c552-44b2-d195-6594-ed3faca36ca2",
+       "label": "Nation",
+       "locked": false,
+       "name": "nation",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "allow_new_line": false,
+       "default": "Level 29, <br>Chifley Tower, <br>2 Chifley Square, Sydney 2000",
+       "display_width": null,
+       "id": "7edb60cd-a3ab-4e5b-d940-c0fcd651ef99",
+       "label": "Address Text",
+       "locked": false,
+       "name": "address_text",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "default": {
+        "content_id": null,
+        "href": "",
+        "type": "EXTERNAL"
+       },
+       "display_width": null,
+       "id": "bf697cca-013e-2f89-6e51-bb82ffbaf0dd",
+       "label": "Address Link",
+       "locked": false,
+       "name": "address_link",
+       "required": false,
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG",
+        "CALL_TO_ACTION",
+        "PHONE_NUMBER",
+        "WHATSAPP_NUMBER",
+        "PAYMENT"
+       ],
+       "type": "url"
+      }
+     ],
+     "default": [
+      {
+       "nation": "Australia",
+       "address_text": "Level 29, Chifley Tower, 2 Chifley Square, Sydney 2000",
+       "address_link": {
+        "content_id": null,
+        "href": "",
+        "type": "EXTERNAL"
+       }
+      }
+     ],
+     "display_width": null,
+     "expanded": false,
+     "group_occurrence_meta": null,
+     "id": "58a5dc30-65b4-2b0a-5df3-87dbfd6b7e63",
+     "label": "Address",
+     "locked": false,
+     "name": "address",
+     "occurrence": {
+      "default": 1,
+      "max": 2,
+      "min": 1
+     },
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
+    },
+    {
+     "allow_new_line": false,
+     "default": "This material has been prepared by YB Life Pty Ltd (ACN 667 901 537) (YBL, ‘us’ or ‘we’). The material on this website is for general information only and is not an offer for the purchase or sale of any financial product or service.  The material is not intended to provide you with financial or tax advice and does not take into account your objectives, financial situation or needs.  Although we believe that the material is correct, no warranty of accuracy, reliability or completeness is given, except for liability under statute which cannot be excluded. Please note that past performance may not be indicative of future performance.  To the maximum extent possible, YBL, its related bodies corporate, and their officers do not accept any liability for any statement on this website.",
+     "display_width": null,
+     "id": "bca7c1c1-1ab6-12d8-7e9c-8bd0b68ee98d",
+     "label": "Description",
+     "locked": false,
+     "name": "description",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
     },
     {
      "type": "group",
-     "id": "58a5dc30-65b4-2b0a-5df3-87dbfd6b7e63",
-     "label": "Address",
+     "id": "a247f245-eb21-5cb0-5f15-bbc92223bc7d",
+     "label": "Privacy Policy",
      "children": [
       {
        "type": "text",
-       "id": "6784c552-44b2-d195-6594-ed3faca36ca2",
+       "id": "dd4270c9-2945-f995-f667-15c780e4db39",
        "validation_regex": "",
-       "label": "Nation",
-       "name": "nation",
-       "default": "Australia"
-      },
-      {
-       "type": "text",
-       "id": "7edb60cd-a3ab-4e5b-d940-c0fcd651ef99",
-       "validation_regex": "",
-       "label": "Address Text",
-       "name": "address_text",
-       "default": "Level 29, Chifley Tower, 2 Chifley Square, Sydney 2000"
+       "label": "Privacy Policy Text",
+       "name": "privacy_policy_text",
+       "default": "Privacy policies"
       },
       {
        "type": "url",
-       "id": "bf697cca-013e-2f89-6e51-bb82ffbaf0dd",
+       "id": "141be222-4739-aa98-5eab-46d3e8cf3889",
        "default": {
         "content_id": null,
         "href": "",
@@ -69,34 +211,104 @@
         "WHATSAPP_NUMBER",
         "PAYMENT"
        ],
-       "label": "Address Link",
-       "name": "address_link"
+       "label": "Privacy Policy Link",
+       "name": "privacy_policy_link"
       }
      ],
-     "name": "address",
-     "default": [
-      {
-       "nation": "Australia",
-       "address_text": "Level 29, Chifley Tower, 2 Chifley Square, Sydney 2000",
-       "address_link": {
-        "content_id": null,
-        "href": "",
-        "type": "EXTERNAL"
-       }
+     "name": "privacy_policy",
+     "default": {
+      "privacy_policy_text": "Privacy policies",
+      "privacy_policy_link": {
+       "content_id": null,
+       "href": "",
+       "type": "EXTERNAL"
       }
-     ],
-     "occurrence": {
-      "min": 1,
-      "max": 2,
-      "default": 1
      }
     },
     {
-     "type": "text",
-     "id": "bca7c1c1-1ab6-12d8-7e9c-8bd0b68ee98d",
-     "validation_regex": "",
-     "label": "Description",
-     "name": "description",
-     "default": "This material has been prepared by YB Life Pty Ltd (ACN 667 901 537) (YBL, ‘us’ or ‘we’). The material on this website is for general information only and is not an offer for the purchase or sale of any financial product or service.  The material is not intended to provide you with financial or tax advice and does not take into account your objectives, financial situation or needs.  Although we believe that the material is correct, no warranty of accuracy, reliability or completeness is given, except for liability under statute which cannot be excluded. Please note that past performance may not be indicative of future performance.  To the maximum extent possible, YBL, its related bodies corporate, and their officers do not accept any liability for any statement on this website."
+     "type": "group",
+     "id": "b91aa836-d1d0-5058-f448-7cdd60443f8e",
+     "label": "Terms of use",
+     "children": [
+      {
+       "type": "text",
+       "id": "d3f930ec-49a9-6b16-ff96-37df9c748e96",
+       "validation_regex": "",
+       "label": "terms of use text",
+       "name": "terms_of_use_text",
+       "default": "Terms of use"
+      },
+      {
+       "type": "url",
+       "id": "78035907-90c0-d05b-8a4c-62f37172a7e4",
+       "default": {
+        "content_id": null,
+        "href": "",
+        "type": "EXTERNAL"
+       },
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG",
+        "CALL_TO_ACTION",
+        "PHONE_NUMBER",
+        "WHATSAPP_NUMBER",
+        "PAYMENT"
+       ],
+       "label": "terms of use link",
+       "name": "terms_of_use_link"
+      }
+     ],
+     "name": "terms_of_use",
+     "default": {
+      "terms_of_use_text": "Terms of use",
+      "terms_of_use_link": {
+       "content_id": null,
+       "href": "",
+       "type": "EXTERNAL"
+      }
+     }
+    },
+    {
+     "type": "group",
+     "id": "94ee16e1-bdf7-a709-e79c-719ad3d3ddeb",
+     "label": "Menu Item",
+     "children": [
+      {
+       "type": "text",
+       "id": "bc3f6f5d-2a25-c32f-a2fe-f04b35bfd609",
+       "validation_regex": "",
+       "label": "text",
+       "name": "text",
+       "default": "Home"
+      },
+      {
+       "type": "url",
+       "id": "8bf8cce6-83d9-dc67-8d79-672adf502a04",
+       "default": {
+        "content_id": null,
+        "href": "",
+        "type": "EXTERNAL"
+       },
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG",
+        "CALL_TO_ACTION",
+        "PHONE_NUMBER",
+        "WHATSAPP_NUMBER",
+        "PAYMENT"
+       ],
+       "label": "Link",
+       "name": "link"
+      }
+     ],
+     "name": "menu_item",
+     "default": [],
+     "occurrence": {}
     }
    ]

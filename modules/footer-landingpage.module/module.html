@@ -1,0 +1,55 @@
+<!-- module html  -->
+  <div class="container container-fluid ">
+    <div class="footer-bg"></div>
+    <div class="footer-inner grid">
+      <div class="footer-main">
+        <div class="footer-logo-wrap">
+          <div class="footer-logo">
+            <div class="footer-logo-inner">
+              <img src="{{module.logo.src}}" alt="" class="img-h">
+            </div>
+          </div>
+          <div class="footer-info-email">
+            <p class="txt txt-16 footer-info-email-label">Email</p>
+            <a href="mailto:{{module.email}}" class="hover-un txt-link footer-info-email-txt">
+              <div class="footer-info-email-txt-inner">
+                <span class="heading h5">{{module.email}}</span>
+                <div class="line line-hover header-signin-line"><div class="line-inner line-inner-hover"></div></div>
+              </div>
+            </a>
+          </div>
+          <div class="footer-logo-line"></div>
+        </div>
+        <div class="footer-info-wrap">
+          <div class="footer-info">
+            <div class="footer-info-left">
+              <div class="footer-info-email">
+                <p class="txt txt-16 footer-info-email-label">Email</p>
+                <a href="mailto:{{module.email}}" class="hover-un txt-link footer-info-email-txt">
+                  <div class="footer-info-email-txt-inner">
+                    <span class="heading h5">{{module.email}}</span>
+                    <div class="line line-hover header-signin-line"><div class="line-inner line-inner-hover"></div></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="footer-info-right">
+              {% for item in module.address %}
+                <div class="footer-info-address">
+                  <p class="txt txt-18 txt-semi footer-info-address-label">{{item.nation}}</p>
+                  <a href="{{item.address_link.href}}" class="txt-link footer-info-address-txt" target="_blank"><span class="txt txt-16 ">{{item.address_text}}</span></a>
+                </div>
+              {% endfor %}
+            </div>
+            <div class="footer-info-line"></div>
+          </div>
+          <div class="footer-desc">
+            <p class="txt txt-14 footer-desc-txt">{{module.description}}</p>
+          </div>
+        </div>
+        <div class="footer-bot">
+          <div class="footer-copyright"><p class="txt txt-14 footer-copyright">Copyright © <span class="current-year">2025</span> FAYBL</p></div>
+        </div>
+      </div>
+    </div>
+  </div>

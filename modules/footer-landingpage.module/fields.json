@@ -1,0 +1,131 @@
+[
+    {
+     "default": {
+      "size_type": "auto",
+      "src": "https://40167303.fs1.hubspotusercontent-na1.net/hubfs/40167303/Logo-footer.svg",
+      "alt": "Logo-footer",
+      "loading": "lazy",
+      "width": 125,
+      "height": 41,
+      "max_width": 125,
+      "max_height": 41
+     },
+     "display_width": null,
+     "id": "5cd0af07-25d6-57ab-daaa-141cb16f38eb",
+     "label": "Logo",
+     "locked": false,
+     "name": "logo",
+     "required": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image"
+    },
+    {
+     "allow_new_line": false,
+     "default": "contact@ybl.ai",
+     "display_width": null,
+     "id": "92024391-a710-7602-300b-9f58e5dadfe6",
+     "label": "Email",
+     "locked": false,
+     "name": "email",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "children": [
+      {
+       "allow_new_line": false,
+       "default": "Australia",
+       "display_width": null,
+       "id": "6784c552-44b2-d195-6594-ed3faca36ca2",
+       "label": "Nation",
+       "locked": false,
+       "name": "nation",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "allow_new_line": false,
+       "default": "Level 29, Chifley Tower, 2 Chifley Square, Sydney 2000",
+       "display_width": null,
+       "id": "7edb60cd-a3ab-4e5b-d940-c0fcd651ef99",
+       "label": "Address Text",
+       "locked": false,
+       "name": "address_text",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "default": {
+        "content_id": null,
+        "href": "",
+        "type": "EXTERNAL"
+       },
+       "display_width": null,
+       "id": "bf697cca-013e-2f89-6e51-bb82ffbaf0dd",
+       "label": "Address Link",
+       "locked": false,
+       "name": "address_link",
+       "required": false,
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG",
+        "CALL_TO_ACTION",
+        "PHONE_NUMBER",
+        "WHATSAPP_NUMBER",
+        "PAYMENT"
+       ],
+       "type": "url"
+      }
+     ],
+     "default": [
+      {
+       "nation": "Australia",
+       "address_text": "Level 29, Chifley Tower, 2 Chifley Square, Sydney 2000",
+       "address_link": {
+        "content_id": null,
+        "href": "",
+        "type": "EXTERNAL"
+       }
+      }
+     ],
+     "display_width": null,
+     "expanded": false,
+     "group_occurrence_meta": null,
+     "id": "58a5dc30-65b4-2b0a-5df3-87dbfd6b7e63",
+     "label": "Address",
+     "locked": false,
+     "name": "address",
+     "occurrence": {
+      "default": 1,
+      "max": 2,
+      "min": 1
+     },
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
+    },
+    {
+     "allow_new_line": false,
+     "default": "This material has been prepared by YB Life Pty Ltd (ACN 667 901 537) (YBL, ‘us’ or ‘we’). The material on this website is for general information only and is not an offer for the purchase or sale of any financial product or service.  The material is not intended to provide you with financial or tax advice and does not take into account your objectives, financial situation or needs.  Although we believe that the material is correct, no warranty of accuracy, reliability or completeness is given, except for liability under statute which cannot be excluded. Please note that past performance may not be indicative of future performance.  To the maximum extent possible, YBL, its related bodies corporate, and their officers do not accept any liability for any statement on this website.",
+     "display_width": null,
+     "id": "bca7c1c1-1ab6-12d8-7e9c-8bd0b68ee98d",
+     "label": "Description",
+     "locked": false,
+     "name": "description",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    }
+   ]

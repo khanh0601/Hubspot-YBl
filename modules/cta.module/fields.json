@@ -1,0 +1,56 @@
+[
+    {
+     "type": "text",
+     "id": "d4982971-5bdd-7b20-e055-c93dce252d1f",
+     "validation_regex": "",
+     "label": "Title",
+     "name": "title",
+     "default": "Follow our Linkedin to subscribe"
+    },
+    {
+     "type": "group",
+     "id": "5afb4386-633f-e5d8-9e13-c662f34de803",
+     "label": "Button",
+     "children": [
+      {
+       "type": "text",
+       "id": "ef3d313a-13cd-77e1-283a-840041e3b026",
+       "validation_regex": "",
+       "label": "Text",
+       "name": "text",
+       "default": "Follow now"
+      },
+      {
+       "type": "url",
+       "id": "e607f8f8-ead8-f7e2-a6be-c5c0aded2f9a",
+       "default": {
+        "content_id": null,
+        "href": "",
+        "type": "EXTERNAL"
+       },
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG",
+        "CALL_TO_ACTION",
+        "PHONE_NUMBER",
+        "WHATSAPP_NUMBER",
+        "PAYMENT"
+       ],
+       "label": "link",
+       "name": "link"
+      }
+     ],
+     "name": "button",
+     "default": {
+      "text": "Follow now",
+      "link": {
+       "content_id": null,
+       "href": "",
+       "type": "EXTERNAL"
+      }
+     }
+    }
+   ]

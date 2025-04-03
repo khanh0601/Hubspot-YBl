@@ -1,32 +1,42 @@
 [
     {
-     "type": "richtext",
-     "id": "d0926562-b990-27e1-fbfa-fe712a88c67f",
+     "allow_new_line": false,
+     "default": "Meet Your New <br>AI-Powered Assistant",
+     "display_width": null,
+     "id": "3f922bf4-a5ee-6f85-ff8d-7b46235d9dc7",
      "label": "Title",
+     "locked": false,
      "name": "title",
-     "default": "Meet Your New&nbsp;<br>AI-Powered Assistant"
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
     },
     {
-     "type": "text",
-     "id": "6f88be42-c0b0-7b56-1297-052a9ae00d33",
-     "validation_regex": "",
+     "allow_new_line": false,
+     "default": "Boost your finance advising workflows 95% faster with FAYBL AI",
+     "display_width": null,
+     "id": "e63b134a-745e-f25d-9326-e4ba4a47bafa",
      "label": "Description",
+     "locked": false,
      "name": "description",
-     "default": "Boost your finance advising workflows 95% faster with FAYBL AI"
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
     },
     {
      "default": {
-      "size_type": "auto_custom_max",
       "src": "https://40167303.fs1.hubspotusercontent-na1.net/hubfs/40167303/hero1.png",
       "alt": "hero1",
-      "loading": "lazy",
       "width": 2092,
       "height": 1370,
+      "size_type": "auto_custom_max",
       "max_width": 2000,
       "max_height": 1309.751434034417
      },
      "display_width": null,
-     "id": "85062704-8dc1-af8f-17f1-1e1ed87ac7e0",
+     "id": "df5ae754-03a7-9306-e1f0-5035cfc33338",
      "label": "Image",
      "locked": false,
      "name": "image",
@@ -37,16 +47,58 @@
      "type": "image"
     },
     {
-     "allow_new_line": false,
-     "default": "Let's get started!",
+     "default": {
+      "size_type": "auto",
+      "src": "https://40167303.fs1.hubspotusercontent-na1.net/hubfs/40167303/video-controll-1.png",
+      "alt": "video-controll-1",
+      "loading": "lazy",
+      "width": 216,
+      "height": 216,
+      "max_width": 216,
+      "max_height": 216
+     },
      "display_width": null,
-     "id": "dd69a8e2-99be-8a0d-ee75-0dda63193538",
-     "label": "Title Form",
+     "id": "db716e24-d8e3-91a2-ffc0-5961c7adb58c",
+     "label": "Ic Video Controll",
      "locked": false,
-     "name": "title_form",
+     "name": "ic_video_controll",
      "required": false,
-     "show_emoji_picker": false,
+     "resizable": true,
+     "responsive": true,
+     "show_loading": false,
+     "type": "image"
+    },
+    {
+     "default": {
+      "content_id": null,
+      "href": "https://40167303.fs1.hubspotusercontent-na1.net/hubfs/40167303/FAYBL%20Product%20Demo.mp4",
+      "type": "EXTERNAL"
+     },
+     "display_width": null,
+     "id": "79c056c6-e652-4825-b46d-eff37a65670c",
+     "label": "Link Video",
+     "locked": false,
+     "name": "link_video",
+     "required": false,
+     "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS",
+      "BLOG",
+      "CALL_TO_ACTION",
+      "PHONE_NUMBER",
+      "WHATSAPP_NUMBER",
+      "PAYMENT"
+     ],
+     "type": "url"
+    },
+    {
      "type": "text",
-     "validation_regex": ""
+     "id": "3d8182a9-bee6-bd1e-82a2-993962ded9fb",
+     "validation_regex": "",
+     "label": "Title Form",
+     "name": "title_form",
+     "default": "Let’s get started!"
     }
    ]

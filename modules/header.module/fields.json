@@ -25,12 +25,202 @@
      "children": [
       {
        "allow_new_line": false,
-       "default": "Schedule a demo",
+       "default": "Home",
+       "display_width": null,
+       "id": "ad004db6-9d8f-d0ae-88fe-11e939976672",
+       "label": "Menu Text",
+       "locked": false,
+       "name": "menu_text",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "default": {
+        "content_id": null,
+        "href": "",
+        "type": "EXTERNAL"
+       },
+       "display_width": null,
+       "id": "2a7a2787-98f9-385f-d29d-e25ad80253fe",
+       "label": "Menu Url",
+       "locked": false,
+       "name": "menu_url",
+       "required": false,
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG",
+        "CALL_TO_ACTION",
+        "PHONE_NUMBER",
+        "WHATSAPP_NUMBER",
+        "PAYMENT"
+       ],
+       "type": "url"
+      }
+     ],
+     "default": [],
+     "display_width": null,
+     "expanded": false,
+     "group_occurrence_meta": null,
+     "id": "8c343db9-c328-297f-04bf-ae8e5d24e0a1",
+     "label": "Menu Item",
+     "locked": false,
+     "name": "menu_item",
+     "occurrence": {},
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
+    },
+    {
+     "children": [
+      {
+       "allow_new_line": false,
+       "default": "Log In ",
+       "display_width": null,
+       "id": "d7596958-82ee-9a61-2a4d-237a6e32d7a4",
+       "label": "Login Text",
+       "locked": false,
+       "name": "login_text",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "default": {
+        "content_id": null,
+        "href": "",
+        "type": "EXTERNAL"
+       },
+       "display_width": null,
+       "id": "ccbd08be-4619-e5e5-9ba8-77a4491a3b46",
+       "label": "Login Link",
+       "locked": false,
+       "name": "login_link",
+       "required": false,
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG",
+        "CALL_TO_ACTION",
+        "PHONE_NUMBER",
+        "WHATSAPP_NUMBER",
+        "PAYMENT"
+       ],
+       "type": "url"
+      }
+     ],
+     "default": {
+      "login_text": "Log In ",
+      "login_link": {
+       "content_id": null,
+       "href": "",
+       "type": "EXTERNAL"
+      }
+     },
+     "display_width": null,
+     "expanded": false,
+     "group_occurrence_meta": null,
+     "id": "024af7bd-70da-a599-0a3a-f7d27e2d763e",
+     "label": "Login",
+     "locked": false,
+     "name": "login",
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
+    },
+    {
+     "children": [
+      {
+       "allow_new_line": false,
+       "default": "Register",
+       "display_width": null,
+       "label": "Register Text",
+       "locked": false,
+       "name": "register_text",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": "",
+       "oldId": "d7596958-82ee-9a61-2a4d-237a6e32d7a4",
+       "id": "fc11c453-57f9-5620-7904-299776ae7c06"
+      },
+      {
+       "default": {
+        "content_id": null,
+        "href": "",
+        "type": "EXTERNAL"
+       },
+       "display_width": null,
+       "label": "Register Link",
+       "locked": false,
+       "name": "register_link",
+       "required": false,
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG",
+        "CALL_TO_ACTION",
+        "PHONE_NUMBER",
+        "WHATSAPP_NUMBER",
+        "PAYMENT"
+       ],
+       "type": "url",
+       "oldId": "ccbd08be-4619-e5e5-9ba8-77a4491a3b46",
+       "id": "b66d2792-c8c3-7ef9-e653-576b8b9b3544"
+      }
+     ],
+     "default": {
+      "register_text": "Register",
+      "register_link": {
+       "content_id": null,
+       "href": "",
+       "type": "EXTERNAL"
+      }
+     },
+     "display_width": null,
+     "expanded": false,
+     "group_occurrence_meta": null,
+     "label": "Register",
+     "locked": false,
+     "name": "register",
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group",
+     "oldId": "024af7bd-70da-a599-0a3a-f7d27e2d763e",
+     "id": "a56547a2-e527-a059-d86b-b153113c5394"
+    },
+    {
+     "children": [
+      {
+       "allow_new_line": false,
+       "default": "Request a demo",
        "display_width": null,
        "id": "cca31b11-49b8-9fe5-c48a-84fbb4a38fd8",
-       "label": "Schedule a demo Text",
+       "label": "Request a demo Text",
        "locked": false,
-       "name": "schedule_a_demo_text",
+       "name": "request_a_demo_text",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "allow_new_line": false,
+       "default": "mailto:contact@faybl.com",
+       "display_width": null,
+       "id": "b5cbe113-c06a-f7c0-4ade-f0d654ba358c",
+       "label": "Request a demo url",
+       "locked": false,
+       "name": "request_a_demo_url",
        "required": false,
        "show_emoji_picker": false,
        "type": "text",
@@ -38,16 +228,16 @@
       }
      ],
      "default": {
-      "schedule_a_demo_text": "Schedule a demo",
-      "schedule_a_demo_url": "mailto:contact@faybl.com"
+      "request_a_demo_text": "Request a demo",
+      "request_a_demo_url": "mailto:contact@faybl.com"
      },
      "display_width": null,
      "expanded": false,
      "group_occurrence_meta": null,
      "id": "79dab589-ef07-b696-74d6-32832ebb37af",
-     "label": "Schedule a demo",
+     "label": "Request a demo",
      "locked": false,
-     "name": "schedule_a_demo",
+     "name": "request_a_demo",
      "required": false,
      "tab": "CONTENT",
      "type": "group"

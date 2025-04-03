@@ -1,11 +1,3 @@
-$('.header-toggle').on('click', function() {
-    $('.header').toggleClass('active');
-})
-$(document).on('click', function(e) {
-    if (!$(e.target).closest('.header').length) {
-        $('.header').removeClass('active');
-    }
-})
 function isInHeaderCheck(el) {
     const rect = $(el).get(0).getBoundingClientRect();
     const headerRect = $('.header').get(0).getBoundingClientRect();
@@ -40,16 +32,26 @@ const HEADER = {
         }
     },
     toggleDarkMode: () => {
-        let elArr = Array.from($('[data-section="dark"]'));
+        let elArr = Array.from($('[data-section="no-fixed"]'));
         if (elArr.some(function(el) {return isInHeaderCheck(el)})) {
-            $('.header').addClass('on-dark');
+            $('.header').removeClass('fixed');
         } else {
-            $('.header').removeClass('on-dark');
+            $('.header').addClass('fixed');
         }
     },
 }
+HEADER.toggleHide(lenis);
+HEADER.toggleDarkMode();
 HEADER.toggleOnScroll(lenis);
 lenis.on('scroll', function (inst) {
     HEADER.toggleOnScroll(inst);
     HEADER.toggleHide(inst);
+    HEADER.toggleDarkMode();
+
 })
+$('.header-btn').click(function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: $('#form').offset().top - 150
+    }, 1000); 
+});
