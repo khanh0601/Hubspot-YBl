@@ -10,7 +10,7 @@
         </div>
         <div class="footer-left-info">
           <div class="footer-info-email">
-            <p class="txt txt-16 footer-info-email-label">Email</p>
+            <p class="txt txt-16 footer-info-email-label">{{ module.email_label }}</p>
             <a href="mailto:{{module.email}}" class="hover-un txt-link footer-info-email-txt">
               <div class="footer-info-email-txt-inner">
                 <span class="txt txt-32 txt-med">{{module.email}}</span>
@@ -19,16 +19,16 @@
             </a>
           </div>
           <div class="footer-info-social">
-            <div class="footer-info-social-label"><span class="txt txt-16">Social</span></div>
+            <div class="footer-info-social-label"><span class="txt txt-16">{{ module.social_label}}</span></div>
             <div class="footer-info-social-list">
-              <a href="{{module.link_linkin.href}}"  class="footer-info-social-item" target="_blank">
+              <a target="_blank" href="{{module.link_linkin.href}}"  class="footer-info-social-item" target="_blank">
                 <div class="footer-info-social-item-ic">
                   <svg width="100%"  viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5718 11.959H17.5238V14.4257C18.2372 13.007 20.0665 11.7323 22.8145 11.7323C28.0825 11.7323 29.3332 14.5563 29.3332 19.7377V29.3337H23.9998V20.9177C23.9998 17.967 23.2865 16.303 21.4705 16.303C18.9518 16.303 17.9052 18.0963 17.9052 20.9163V29.3337H12.5718V11.959ZM3.4265 29.107H8.75984V11.7323H3.4265V29.107ZM9.52384 6.06699C9.52404 6.51403 9.43538 6.95664 9.26302 7.36911C9.09066 7.78158 8.83804 8.15568 8.51984 8.46966C7.87504 9.11049 7.00225 9.4692 6.09317 9.46699C5.18569 9.46638 4.31492 9.10859 3.66917 8.47099C3.35212 8.15594 3.10035 7.78143 2.9283 7.3689C2.75624 6.95638 2.66728 6.51396 2.6665 6.06699C2.6665 5.16433 3.0265 4.30033 3.6705 3.66299C4.31568 3.02454 5.18682 2.66659 6.09451 2.66699C7.00384 2.66699 7.87584 3.02566 8.51984 3.66299C9.16251 4.30033 9.52384 5.16433 9.52384 6.06699Z" fill="currentColor"/>
                   </svg>                    
                 </div>
               </a>
-              <a href="{{module.link_linkin.href}}"  class="footer-info-social-item" target="_blank">
+              <a target="_blank" href="{{module.link_youtube.href}}"  class="footer-info-social-item" target="_blank">
                 <div class="footer-info-social-item-ic">
                   <svg width="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M31.7333 9.5998C31.7333 9.5998 31.4667 7.33314 30.4 6.3998C29.2 5.06647 27.8667 5.06647 27.2 5.06647C22.6667 4.7998 16 4.7998 16 4.7998C16 4.7998 9.33333 4.7998 4.8 5.06647C4.13333 5.1998 2.8 5.19981 1.6 6.3998C0.666667 7.33314 0.266667 9.5998 0.266667 9.5998C0.266667 9.5998 0 12.1331 0 14.7998V17.1998C0 19.7331 0.266667 22.3998 0.266667 22.3998C0.266667 22.3998 0.533333 24.6665 1.6 25.5998C2.8 26.9331 4.4 26.7998 5.06667 26.9331C7.6 27.1998 16 27.1998 16 27.1998C16 27.1998 22.6667 27.1998 27.2 26.7998C27.8667 26.6665 29.2 26.6665 30.4 25.4665C31.3333 24.5331 31.7333 22.2665 31.7333 22.2665C31.7333 22.2665 32 19.7331 32 17.0665V14.6665C32 12.1331 31.7333 9.5998 31.7333 9.5998ZM12.6667 20.1331V11.1998L21.3333 15.7331L12.6667 20.1331Z" fill="currentColor"/>
@@ -59,7 +59,7 @@
             <div class="footer-info-right">
               {% for item in module.address %}
                 <div class="footer-info-address">
-                  <p class="txt txt-24 txt-semi footer-info-address-label">{{item.nation}}</p>
+                  <p class="txt txt-24 txt-med footer-info-address-label">{{item.nation}}</p>
                   <a href="{{item.address_link.href}}" class="txt-link footer-info-address-txt" target="_blank"><span class="txt txt-16 ">{{item.address_text}}</span></a>
                 </div>
               {% endfor %}

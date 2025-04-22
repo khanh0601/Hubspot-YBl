@@ -1,0 +1,25 @@
+{% import '../macro.html' %}
+{% set rec_posts = blog_recent_posts("default", 4) %}
+{% set filtered_posts = [] %}
+{% for post in rec_posts %}
+  {% if post.id != content.id %}
+    {% do filtered_posts.append(post) %}
+  {% endif %}
+{% endfor %}
+<section class="blog-other hidden">
+  <div class="container ">
+    <div class="blog-other-article-title"><span class="heading h3">{{ module.title_article}}</span></div>
+    <div class="blog-other-article-list">
+      <div class="blog-other-article-inner">
+        {% for post in filtered_posts %}
+          {% if(loop.index < 4) %}
+            <div class="blog-other-article">
+              {{ news_card(post) }}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="blog-other-pagi"></div>
+    </div>
+  </div>
+</section>

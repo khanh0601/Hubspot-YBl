@@ -1,0 +1,22 @@
+{% import '../macro.html' %}
+<section class="blog-listing-hero">
+  <div class="container ">
+    <div class="blog-listing-hero-title-wrap" >
+      <h1 class="heading h0 blog-listing-hero-title" data-init-df>{{ module.title}}</h1>
+      <div class="blog-listing-hero-sub" data-init-df><span class="txt txt-16">{{ module.description}}</span></div>
+    </div>
+    <div class="blog-listing-hero-article-title" data-init-df><span class="heading h3 hidden">{{ module.title_article}}</span></div>
+    <div class="blog-listing-hero-article-wrap" data-init-df>
+      <div class="blog-listing-hero-article-inner grid">
+        {% for content in contents %}
+          {% if loop.index < 5 %}
+            <div class="blog-listing-hero-article">
+              {{ news_card(content) }}
+            </div>
+          {% endif %} 
+        {% endfor %}
+      </div>
+      <div class="blog-listing-pagi"></div>
+    </div>
+  </div>
+</section>

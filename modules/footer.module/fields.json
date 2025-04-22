@@ -35,20 +35,44 @@
      "validation_regex": ""
     },
     {
-     "type": "text",
+     "allow_new_line": false,
+     "default": "Social",
+     "display_width": null,
      "id": "d43aad99-1ef4-8ec9-d068-76781778054c",
-     "validation_regex": "",
      "label": "Social Label",
-     "name": "social_label"
+     "locked": false,
+     "name": "social_label",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
     },
     {
-     "type": "url",
+     "allow_new_line": false,
+     "default": "Email",
+     "display_width": null,
+     "label": "Email Label",
+     "locked": false,
+     "name": "email_label",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": "",
+     "oldId": "d43aad99-1ef4-8ec9-d068-76781778054c",
+     "id": "138515ad-9542-6415-5c9b-9d4b9a1e29df"
+    },
+    {
+     "default": {
+      "content_id": null,
+      "href": "",
+      "type": "EXTERNAL"
+     },
+     "display_width": null,
      "id": "57f7108e-d239-461b-3d40-c7265b7dcd56",
-     "default": {
-      "content_id": null,
-      "href": "",
-      "type": "EXTERNAL"
-     },
+     "label": "Link Linkin",
+     "locked": false,
+     "name": "link_linkin",
+     "required": false,
      "supported_types": [
       "EXTERNAL",
       "CONTENT",
@@ -60,17 +84,20 @@
       "WHATSAPP_NUMBER",
       "PAYMENT"
      ],
-     "label": "Link Linkin",
-     "name": "link_linkin"
+     "type": "url"
     },
     {
-     "type": "url",
-     "id": "0add027e-3076-01a0-84b7-d09aec988969",
      "default": {
       "content_id": null,
       "href": "",
       "type": "EXTERNAL"
      },
+     "display_width": null,
+     "id": "0add027e-3076-01a0-84b7-d09aec988969",
+     "label": "Link Youtube",
+     "locked": false,
+     "name": "link_youtube",
+     "required": false,
      "supported_types": [
       "EXTERNAL",
       "CONTENT",
@@ -82,8 +109,7 @@
       "WHATSAPP_NUMBER",
       "PAYMENT"
      ],
-     "label": "Link Youtube",
-     "name": "link_youtube"
+     "type": "url"
     },
     {
      "children": [
@@ -180,26 +206,32 @@
      "validation_regex": ""
     },
     {
-     "type": "group",
-     "id": "a247f245-eb21-5cb0-5f15-bbc92223bc7d",
-     "label": "Privacy Policy",
      "children": [
       {
-       "type": "text",
+       "allow_new_line": false,
+       "default": "Privacy policies",
+       "display_width": null,
        "id": "dd4270c9-2945-f995-f667-15c780e4db39",
-       "validation_regex": "",
        "label": "Privacy Policy Text",
+       "locked": false,
        "name": "privacy_policy_text",
-       "default": "Privacy policies"
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
       },
       {
-       "type": "url",
-       "id": "141be222-4739-aa98-5eab-46d3e8cf3889",
        "default": {
         "content_id": null,
         "href": "",
         "type": "EXTERNAL"
        },
+       "display_width": null,
+       "id": "141be222-4739-aa98-5eab-46d3e8cf3889",
+       "label": "Privacy Policy Link",
+       "locked": false,
+       "name": "privacy_policy_link",
+       "required": false,
        "supported_types": [
         "EXTERNAL",
         "CONTENT",
@@ -211,11 +243,9 @@
         "WHATSAPP_NUMBER",
         "PAYMENT"
        ],
-       "label": "Privacy Policy Link",
-       "name": "privacy_policy_link"
+       "type": "url"
       }
      ],
-     "name": "privacy_policy",
      "default": {
       "privacy_policy_text": "Privacy policies",
       "privacy_policy_link": {
@@ -223,29 +253,45 @@
        "href": "",
        "type": "EXTERNAL"
       }
-     }
+     },
+     "display_width": null,
+     "expanded": false,
+     "group_occurrence_meta": null,
+     "id": "a247f245-eb21-5cb0-5f15-bbc92223bc7d",
+     "label": "Privacy Policy",
+     "locked": false,
+     "name": "privacy_policy",
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
     },
     {
-     "type": "group",
-     "id": "b91aa836-d1d0-5058-f448-7cdd60443f8e",
-     "label": "Terms of use",
      "children": [
       {
-       "type": "text",
+       "allow_new_line": false,
+       "default": "Terms of use",
+       "display_width": null,
        "id": "d3f930ec-49a9-6b16-ff96-37df9c748e96",
-       "validation_regex": "",
        "label": "terms of use text",
+       "locked": false,
        "name": "terms_of_use_text",
-       "default": "Terms of use"
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
       },
       {
-       "type": "url",
-       "id": "78035907-90c0-d05b-8a4c-62f37172a7e4",
        "default": {
         "content_id": null,
         "href": "",
         "type": "EXTERNAL"
        },
+       "display_width": null,
+       "id": "78035907-90c0-d05b-8a4c-62f37172a7e4",
+       "label": "terms of use link",
+       "locked": false,
+       "name": "terms_of_use_link",
+       "required": false,
        "supported_types": [
         "EXTERNAL",
         "CONTENT",
@@ -257,11 +303,9 @@
         "WHATSAPP_NUMBER",
         "PAYMENT"
        ],
-       "label": "terms of use link",
-       "name": "terms_of_use_link"
+       "type": "url"
       }
      ],
-     "name": "terms_of_use",
      "default": {
       "terms_of_use_text": "Terms of use",
       "terms_of_use_link": {
@@ -269,29 +313,45 @@
        "href": "",
        "type": "EXTERNAL"
       }
-     }
+     },
+     "display_width": null,
+     "expanded": false,
+     "group_occurrence_meta": null,
+     "id": "b91aa836-d1d0-5058-f448-7cdd60443f8e",
+     "label": "Terms of use",
+     "locked": false,
+     "name": "terms_of_use",
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
     },
     {
-     "type": "group",
-     "id": "94ee16e1-bdf7-a709-e79c-719ad3d3ddeb",
-     "label": "Menu Item",
      "children": [
       {
-       "type": "text",
+       "allow_new_line": false,
+       "default": "Home",
+       "display_width": null,
        "id": "bc3f6f5d-2a25-c32f-a2fe-f04b35bfd609",
-       "validation_regex": "",
        "label": "text",
+       "locked": false,
        "name": "text",
-       "default": "Home"
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
       },
       {
-       "type": "url",
-       "id": "8bf8cce6-83d9-dc67-8d79-672adf502a04",
        "default": {
         "content_id": null,
         "href": "",
         "type": "EXTERNAL"
        },
+       "display_width": null,
+       "id": "8bf8cce6-83d9-dc67-8d79-672adf502a04",
+       "label": "Link",
+       "locked": false,
+       "name": "link",
+       "required": false,
        "supported_types": [
         "EXTERNAL",
         "CONTENT",
@@ -303,12 +363,20 @@
         "WHATSAPP_NUMBER",
         "PAYMENT"
        ],
-       "label": "Link",
-       "name": "link"
+       "type": "url"
       }
      ],
-     "name": "menu_item",
      "default": [],
-     "occurrence": {}
+     "display_width": null,
+     "expanded": false,
+     "group_occurrence_meta": null,
+     "id": "94ee16e1-bdf7-a709-e79c-719ad3d3ddeb",
+     "label": "Menu Item",
+     "locked": false,
+     "name": "menu_item",
+     "occurrence": {},
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
     }
    ]

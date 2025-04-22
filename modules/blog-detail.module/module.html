@@ -1,0 +1,60 @@
+{% import '../macro.html' %}
+<section class="blog-detail">
+  <div class="container grid">
+    <div class="blog-detail-nav" data-init-df>
+      <a href="https://www.faybl.com/" class="blog-detail-nav-item txt txt-14"><span class="txt txt-14">Home</span></a>
+      <div class="blog-detail-nav-space txt txt-14">|</div>
+      <a href="https://blog.faybl.com/blog" class="blog-detail-nav-item"><span class="txt txt-14">Blog</span></a>
+      <div class="blog-detail-nav-space txt txt-14">|</div>
+      <a class="blog-detail-nav-item current"><span class="txt txt-14">{{ content.name }}</span></a>
+    </div>
+    <h1 class="heading h2 blog-detail-title" data-init-df>{{ content.name }}</h1>
+    <div class="blog-detail-thumb" data-init-df>
+      <img src="{{ content.featured_image }}" alt="" class="img img-h">
+    </div>
+    <div class="blog-detail-content" data-init-df>
+      {{ content.post_body }}
+    </div>
+    <div class="blog-detail-share-wrap">
+      <div class="blog-detail-date">
+        <div class="blog-detail-date-ic">
+          <svg width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 6.66665H2M10.6667 1.33331V3.99998M5.33333 1.33331V3.99998M5.2 14.6666H10.8C11.9201 14.6666 12.4802 14.6666 12.908 14.4487C13.2843 14.2569 13.5903 13.951 13.782 13.5746C14 13.1468 14 12.5868 14 11.4666V5.86665C14 4.74654 14 4.18649 13.782 3.75867C13.5903 3.38234 13.2843 3.07638 12.908 2.88463C12.4802 2.66665 11.9201 2.66665 10.8 2.66665H5.2C4.0799 2.66665 3.51984 2.66665 3.09202 2.88463C2.71569 3.07638 2.40973 3.38234 2.21799 3.75867C2 4.18649 2 4.74654 2 5.86665V11.4666C2 12.5868 2 13.1468 2.21799 13.5746C2.40973 13.951 2.71569 14.2569 3.09202 14.4487C3.51984 14.6666 4.0799 14.6666 5.2 14.6666Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>                    
+        </div>
+        <div class="blog-detail-date-txt"><span class="txt txt-16">
+          {{ content.publish_date_local_time.strftime('%d') }}
+          {{ content.publish_date_local_time.strftime('%B') }},
+          {{ content.publish_date_local_time.strftime('%Y') }}
+        </span></div>
+      </div>
+      <div class="blog-detail-share">
+        <div class="blog-detail-share-title"><span class="txt txt-16">Share</span></div>
+        <div class="blog-detail-share-list">
+          <a class="blog-detail-share-item" type="copy">
+            <div class="blog-detail-share-item-tooltip"><span class="txt txt-14">Copy Link</span></div>
+            <div class="blog-detail-share-item-ic">
+              <svg width="100%" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.6668 9.06663C6.9531 9.44938 7.31837 9.76608 7.73783 9.99525C8.1573 10.2244 8.62114 10.3607 9.0979 10.3949C9.57466 10.429 10.0532 10.3602 10.501 10.1931C10.9489 10.0261 11.3555 9.76467 11.6935 9.42663L13.6935 7.42663C14.3007 6.79795 14.6366 5.95595 14.629 5.08196C14.6215 4.20797 14.2709 3.37193 13.6529 2.7539C13.0348 2.13587 12.1988 1.78531 11.3248 1.77771C10.4508 1.77012 9.60881 2.1061 8.98013 2.71329L7.83347 3.85329M9.33347 7.73329C9.04716 7.35054 8.68189 7.03384 8.26243 6.80467C7.84297 6.5755 7.37913 6.43922 6.90237 6.40507C6.4256 6.37093 5.94708 6.43972 5.49924 6.60677C5.0514 6.77383 4.64472 7.03525 4.3068 7.37329L2.3068 9.37329C1.69961 10.002 1.36363 10.844 1.37122 11.718C1.37881 12.592 1.72938 13.428 2.3474 14.046C2.96543 14.6641 3.80147 15.0146 4.67546 15.0222C5.54945 15.0298 6.39146 14.6938 7.02013 14.0866L8.16013 12.9466" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg> 
+            </div>             
+          </a>
+          <a class="blog-detail-share-item" type="whatsapp"  target="_blank">
+            <div class="blog-detail-share-item-ic">
+              <svg width="100%" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.9997 1.03906C3.94146 1.03906 0.639696 4.34082 0.639696 8.39906C0.639696 9.66626 0.967056 10.9123 1.58786 12.0119L0.651536 15.3527C0.620816 15.4624 0.650576 15.5802 0.729936 15.6618C0.791056 15.7248 0.874256 15.7591 0.959696 15.7591C0.985296 15.7591 1.01122 15.7559 1.0365 15.7498L4.52322 14.8861C5.58786 15.4576 6.7869 15.7591 7.9997 15.7591C12.0579 15.7591 15.3597 12.4573 15.3597 8.39906C15.3597 4.34082 12.0579 1.03906 7.9997 1.03906ZM11.7021 10.9962C11.5447 11.432 10.7895 11.8298 10.4266 11.8832C10.1008 11.9309 9.68866 11.9514 9.23618 11.8093C8.96194 11.7229 8.60994 11.6083 8.15906 11.416C6.2637 10.6077 5.02594 8.72322 4.93122 8.59874C4.83682 8.47426 4.1597 7.58722 4.1597 6.66914C4.1597 5.75106 4.6477 5.29954 4.82114 5.11266C4.99458 4.92578 5.19906 4.87906 5.32514 4.87906C5.45122 4.87906 5.57698 4.88066 5.68738 4.88578C5.80354 4.89154 5.95938 4.84194 6.11266 5.2061C6.2701 5.57986 6.64802 6.49794 6.69474 6.5917C6.7421 6.68514 6.77346 6.79426 6.71074 6.91874C6.64802 7.04322 6.61666 7.12098 6.52194 7.2301C6.42722 7.33922 6.32354 7.4733 6.23842 7.55714C6.1437 7.65026 6.04546 7.75106 6.15554 7.93794C6.26562 8.12482 6.64482 8.7357 7.20674 9.23042C7.92834 9.86594 8.5373 10.0631 8.7261 10.1565C8.9149 10.2499 9.0253 10.2343 9.13538 10.1098C9.24546 9.98498 9.6077 9.56482 9.73346 9.37826C9.85922 9.1917 9.9853 9.22242 10.1587 9.28482C10.3322 9.3469 11.2611 9.7981 11.4499 9.89154C11.6387 9.98498 11.7648 10.0317 11.8122 10.1095C11.8595 10.1869 11.8595 10.5607 11.7021 10.9962Z" fill="currentColor" />
+              </svg>                
+            </div>             
+          </a>
+          <a class="blog-detail-share-item"type="twitter" target="_blank">
+            <div class="blog-detail-share-item-ic">
+              <svg width="100%" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.8158 2.4375H13.8382L9.42103 7.4849L14.6174 14.3542H10.5497L7.36139 10.1891L3.71764 14.3542H1.69238L6.41608 8.95443L1.43457 2.4375H5.6054L8.48431 6.24453L11.8158 2.4375ZM11.1054 13.1453H12.2255L4.99525 3.58333H3.79212L11.1054 13.1453Z" fill="currentColor" />
+              </svg>                
+            </div>             
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

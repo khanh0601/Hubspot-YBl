@@ -1,3 +1,10 @@
+let currentLink = window.location.href;
+currentLink = currentLink.split('?')[0];
+$('.header-menu-item').each((idx, item) => {
+    if ($(item).attr('href') == currentLink) {
+        $(item).addClass('active');
+    }
+})
 $('.header-toggle').on('click', function() {
     $('.header').toggleClass('active');
 })
@@ -6,6 +13,7 @@ $(document).on('click', function(e) {
         $('.header').removeClass('active');
     }
 })
+
 function isInHeaderCheck(el) {
     const rect = $(el).get(0).getBoundingClientRect();
     const headerRect = $('.header').get(0).getBoundingClientRect();

@@ -1,0 +1,31 @@
+[
+    {
+     "allow_new_line": false,
+     "default": "FAYBL Blog",
+     "display_width": null,
+     "id": "d4982971-5bdd-7b20-e055-c93dce252d1f",
+     "label": "Title",
+     "locked": false,
+     "name": "title",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "type": "text",
+     "id": "142b1ece-f8fa-108a-41e2-225154bbd562",
+     "validation_regex": "",
+     "label": "Description",
+     "name": "description",
+     "default": "Stay ahead in the world of fintech with the latest insights, trends, and innovations shaping the future of digital finance."
+    },
+    {
+     "type": "text",
+     "id": "cc2b12ef-36b3-01fe-465b-5fa773243229",
+     "validation_regex": "",
+     "label": "Title Article",
+     "name": "title_article",
+     "default": "Featured articles"
+    }
+   ]

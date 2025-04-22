@@ -20,6 +20,9 @@
         {% block body %}
         {% endblock body %}
       </main>
+      {% block cta %}
+        {% global_partial path="../partials/cta.html" %}
+      {% endblock cta %}
       {% block footer %}
         {% global_partial path="../partials/footer.html" %}
       {% endblock footer %}

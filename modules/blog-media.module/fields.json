@@ -1,0 +1,104 @@
+[
+    {
+     "allow_new_line": false,
+     "default": "In the media",
+     "display_width": null,
+     "id": "cc2b12ef-36b3-01fe-465b-5fa773243229",
+     "label": "Title",
+     "locked": false,
+     "name": "title",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "children": [
+      {
+       "default": {
+        "size_type": "auto",
+        "src": "https://40167303.fs1.hubspotusercontent-na1.net/hubfs/40167303/robot-hands-ifa.webp",
+        "alt": "robot-hands-ifa",
+        "loading": "lazy",
+        "width": 855,
+        "height": 480,
+        "max_width": 855,
+        "max_height": 480
+       },
+       "display_width": null,
+       "id": "14a959aa-6953-43bd-4c64-02333fbf5778",
+       "label": "Thumbnail",
+       "locked": false,
+       "name": "thumbnail",
+       "required": false,
+       "resizable": true,
+       "responsive": true,
+       "show_loading": false,
+       "type": "image"
+      },
+      {
+       "type": "link",
+       "id": "6a595c1e-7c38-0003-64b3-7d34de784cdd",
+       "default": {
+        "url": {
+         "content_id": null,
+         "href": "https://www.moneymanagement.com.au/news/financial-planning/adviser-ai-tool-hits-market",
+         "type": "EXTERNAL"
+        },
+        "open_in_new_tab": false,
+        "no_follow": false
+       },
+       "supported_types": [
+        "EXTERNAL",
+        "CONTENT",
+        "FILE",
+        "EMAIL_ADDRESS",
+        "BLOG",
+        "CALL_TO_ACTION",
+        "PHONE_NUMBER",
+        "WHATSAPP_NUMBER",
+        "PAYMENT"
+       ],
+       "label": "Link",
+       "name": "link"
+      },
+      {
+       "allow_new_line": false,
+       "default": "Adviser AI tool hits the market",
+       "display_width": null,
+       "id": "c832741a-4498-dd4b-62e5-0663f65f98da",
+       "label": "Title",
+       "locked": false,
+       "name": "title",
+       "required": false,
+       "show_emoji_picker": false,
+       "type": "text",
+       "validation_regex": ""
+      },
+      {
+       "default": 1744552800000,
+       "display_width": null,
+       "id": "c7a601ff-7f4f-1abb-f592-29f3e39eac58",
+       "label": "Date Publish",
+       "locked": false,
+       "name": "date_publish",
+       "required": false,
+       "type": "date"
+      }
+     ],
+     "default": [],
+     "display_width": null,
+     "expanded": false,
+     "group_occurrence_meta": null,
+     "id": "8150b35f-0fa9-3628-4a1e-f5081cd91d89",
+     "label": "Media Item",
+     "locked": false,
+     "name": "media_item",
+     "occurrence": {
+      "sorting_label_field": "c832741a-4498-dd4b-62e5-0663f65f98da"
+     },
+     "required": false,
+     "tab": "CONTENT",
+     "type": "group"
+    }
+   ]

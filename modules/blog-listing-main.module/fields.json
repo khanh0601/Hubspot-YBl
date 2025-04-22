@@ -1,0 +1,15 @@
+[
+    {
+     "allow_new_line": false,
+     "default": "All articles",
+     "display_width": null,
+     "id": "cc2b12ef-36b3-01fe-465b-5fa773243229",
+     "label": "Title Article",
+     "locked": false,
+     "name": "title_article",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    }
+   ]

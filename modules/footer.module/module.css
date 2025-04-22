@@ -65,7 +65,7 @@
     display: flex;
     width: max-content;
 }
-.footer-menu-item-txt:hover{
+.footer-menu-item-txt:hover, .footer-menu-item-txt.active{
     color: var(--cl-orange);
 }
 .footer-info{

@@ -14,6 +14,11 @@
     font-weight: 500;
 }
 @font-face {
+    font-family: "Poppin";
+    src: url('{{ get_asset_url('/YBL_BP/fonts/Poppins-Bold.woff2') }}'), format("woff2");
+    font-weight: 700;
+}
+@font-face {
     font-family: "Urbanist";
     src: url('{{ get_asset_url('/YBL_BP/fonts/Urbanist-Medium.woff2') }}'), format("woff2");
 }
@@ -128,12 +133,27 @@ html.lenis, html.lenis body {
 a {
     text-decoration: none;
 }
-.line.line-hover {
+.line.line-array{
+    display: flex;
+    column-gap: .4rem;
+}
+.line-array .line-inner {
+    width: 100%;
+    flex: none;
+}
+.hover-un:hover .line-inner-main, .hover-un:hover .line-inner-clone{
+    transform: translateX(0);
+}
+.line-array .line-inner {
+    transform: translateX(calc(-100% - .4rem));
+    transition: .4s ease all;
+}
+.line.line-hover, .line.line-array {
     position: absolute;
     bottom: .1em;
     overflow: hidden;
 }
-.line-inner.line-inner-hover {
+.line-inner.line-inner-hover, .line-array .line-inner  {
     background-color: currentColor;
     position: relative;
     height: 100%;
@@ -170,6 +190,10 @@ a {
 .txt-link{
     color:  inherit;
     text-decoration: none;
+    transition: .4s ease color;
+}
+.txt-link:hover{
+    color: var(--cl-orange) !important;
 }
 .txt-14{
     font-size: 1.4rem;
@@ -246,12 +270,13 @@ a {
 }
 .btn{
     border-radius: 1rem;
-    padding: 1.8rem 2.4rem;
+    padding: 1.9rem 2.4rem 1.7rem 2.4rem;
     transition: background-color .4s, color  .4s;
     text-decoration: none;
 }
 .btn .txt{
     line-height: 1em !important;
+    white-space: nowrap;
 }
 .btn-orange{
     background-color: var(--cl-orange);
@@ -279,6 +304,16 @@ a {
     padding: 1.9rem 6rem;
     border-radius: 3rem
 }
+.btn-outline {
+    border: 1px solid var(--cl-black-20);
+    color: var(--cl-black);
+    background-color: transparent;
+}
+.btn-outline:hover {
+    border-color: var(--cl-orange);
+    color: var(--cl-white);
+    background-color: var(--cl-orange);
+}
 .label-gr{
     padding: .4rem 1.2rem .4rem .8rem;
     border-radius: 3rem;
@@ -289,6 +324,11 @@ a {
 }
 [data-init-df] {
     opacity: 0;
+}
+@media only screen and (max-width: 1500px) and (min-width: 991px) {
+    .txt.txt-16, .txt.txt-18 {
+        font-size: 1.18vw !important;
+    }
 }
 @media only screen and (max-width: 991px) {
     .container.container-fluid{
@@ -329,4 +369,7 @@ a {
     .ld-sol-content-item-title{
         margin-bottom: 1.6rem;
     }
+}
+.hidden{
+    display: none!important;
 }

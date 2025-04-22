@@ -1,6 +1,6 @@
 <!-- module html  -->
   <div class="container" data-init-df>
-    <div class="header-inner">
+    <div class="header-inner grid">
       <div class="header-logo-wrap">
         <div class="header-logo-inner">
           <svg height="100%" viewBox="0 0 140 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,10 +30,10 @@
         {% endfor %}
         <div class="header-act-mob">
           <div class="header-signin-wrap">
-            <a href="{{module.login.login_link.url.href}}" class="header-signin" target="_blank">
+            <a target="_blank" href="{{module.login.login_link.href}}" class="header-signin" target="_blank">
               <span class="txt txt-16 txt-med">{{module.login.login_text}}</span>
             </a>
-            <a href="{{module.register.register_link.url.href}}" class="header-signup " target="_blank">
+            <a target="_blank" href="{{module.register.register_link.href}}" class="header-signup " target="_blank">
               <span class="txt txt-16 txt-med">{{module.register.register_text}}</span>
             </a>
           </div>
@@ -41,14 +41,14 @@
       </div>
       <div class="header-act">
         <div class="header-signin-wrap">
-          <a href="{{module.login.login_link.url.href}}" class="header-signin " target="_blank">
+          <a target="_blank" href="{{module.login.login_link.href}}" class="header-signin " target="_blank">
             <span class="txt txt-16 txt-med">{{module.login.login_text}}</span>
           </a>
-          <a href="{{module.register.register_link.url.href}}" class="header-signup " target="_blank">
+          <a target="_blank" href="{{module.register.register_link.href}}" class="header-signup " target="_blank">
             <span class="txt txt-16 txt-med">{{module.register.register_text}}</span>
           </a>
         </div>
-        <a href="{{module.request_a_demo.request_a_demo_url.url.href}}" class="header-request-demo btn btn-orange" target="_blank">
+        <a target="_blank" href="{{module.request_a_demo.request_a_demo_url}}" class="header-request-demo btn btn-orange" target="_blank">
           <div class="header-request-demo-ic">
             <svg width="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2.66675 8H13.3334M13.3334 8L9.33341 4M13.3334 8L9.33341 12" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
